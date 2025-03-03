@@ -16,7 +16,7 @@
         <roles/>
         <short_description/>
         <size>md</size>
-        <sp_column display_value="2">541ce0a1834c22101d61f855eeaad3ab</sp_column>
+        <sp_column display_value="1">541ce0a1834c22101d61f855eeaad3ab</sp_column>
         <sp_page/>
         <sp_widget display_value="Simple List">5b255672cb03020000f8d856634c9c28</sp_widget>
         <sys_class_name>sp_instance_vlist</sys_class_name>

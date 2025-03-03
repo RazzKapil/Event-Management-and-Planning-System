@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message">
+    <sys_rest_message action="DELETE">
+        <access>package_private</access>
+        <authentication_type>oauth2</authentication_type>
+        <basic_auth_password/>
+        <basic_auth_profile/>
+        <basic_auth_user/>
+        <description/>
+        <name>Event Notification API</name>
+        <oauth2_profile/>
+        <protocol_name/>
+        <rest_endpoint>https://dev292432.service-now.com</rest_endpoint>
+        <sys_class_name>sys_rest_message</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-01 17:26:34</sys_created_on>
+        <sys_id>2177b349834c62101d61f855eeaad3be</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Event Notification API</sys_name>
+        <sys_package display_value="Event Management" source="x_1419495_event">fd08c2b0830022101d61f855eeaad39a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Event Management">fd08c2b0830022101d61f855eeaad39a</sys_scope>
+        <sys_update_name>sys_rest_message_2177b349834c62101d61f855eeaad3be</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-01 17:38:00</sys_updated_on>
+        <use_basic_auth>false</use_basic_auth>
+        <use_mutual_auth>false</use_mutual_auth>
+    </sys_rest_message>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Event Management">fd08c2b0830022101d61f855eeaad39a</application>
+        <file_path/>
+        <instance_id>327bf095db4dc69037d72a591396198e</instance_id>
+        <instance_name>dev244205</instance_name>
+        <name>sys_rest_message_2177b349834c62101d61f855eeaad3be</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message"><sys_rest_message action="INSERT_OR_UPDATE"><access>package_private</access><authentication_type>oauth2</authentication_type><basic_auth_password/><basic_auth_profile/><basic_auth_user/><description/><name>Event Notification API</name><oauth2_profile/><protocol_name/><rest_endpoint>https://dev292432.service-now.com</rest_endpoint><sys_class_name>sys_rest_message</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-03-01 17:26:34</sys_created_on><sys_id>2177b349834c62101d61f855eeaad3be</sys_id><sys_mod_count>1</sys_mod_count><sys_name>Event Notification API</sys_name><sys_package display_value="Event Management" source="x_1419495_event">fd08c2b0830022101d61f855eeaad39a</sys_package><sys_policy/><sys_scope display_value="Event Management">fd08c2b0830022101d61f855eeaad39a</sys_scope><sys_update_name>sys_rest_message_2177b349834c62101d61f855eeaad3be</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-03-01 17:38:00</sys_updated_on><use_basic_auth>false</use_basic_auth><use_mutual_auth>false</use_mutual_auth></sys_rest_message></record_update>]]></payload>
+        <payload_hash>-821637840</payload_hash>
+        <record_name>Event Notification API</record_name>
+        <reverted_from/>
+        <source>a2f8667083c022101d61f855eeaad3bb</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-01 17:38:00</sys_created_on>
+        <sys_id>b66aff0d834c62101d61f855eeaad325</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19552c953190000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-01 17:38:00</sys_updated_on>
+        <type>REST Message</type>
+        <update_guid>ba6aff0d064c6210602e368360b99424</update_guid>
+        <update_guid_history>ba6aff0d064c6210602e368360b99424:-821637840,9bc77b49774c6210bce11e6092970d36:1233745819</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-01 17:51:12</sys_created_on>
+        <sys_db_object display_value="" name="sys_rest_message">sys_rest_message</sys_db_object>
+        <sys_id>21ca14b71c22406c8a9a991aa2b023c1</sys_id>
+        <sys_metadata>2177b349834c62101d61f855eeaad3be</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Event Notification API</sys_name>
+        <sys_package display_value="Event Management" source="x_1419495_event">fd08c2b0830022101d61f855eeaad39a</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Event Management">fd08c2b0830022101d61f855eeaad39a</sys_scope>
+        <sys_scope_delete display_value="">909d60b3437b482594cc4c5e818e53c1</sys_scope_delete>
+        <sys_update_name>sys_rest_message_2177b349834c62101d61f855eeaad3be</sys_update_name>
+        <sys_update_version display_value="sys_rest_message_2177b349834c62101d61f855eeaad3be">b66aff0d834c62101d61f855eeaad325</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-01 17:51:12</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

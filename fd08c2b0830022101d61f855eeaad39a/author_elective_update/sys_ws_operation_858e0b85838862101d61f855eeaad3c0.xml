@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_operation">
+    <sys_ws_operation action="DELETE">
+        <active>true</active>
+        <consumes>application/json,application/xml,text/xml</consumes>
+        <consumes_customized>false</consumes_customized>
+        <default_operation_uri/>
+        <enforce_acl>cf9d01d3e73003009d6247e603f6a990</enforce_acl>
+        <http_method>POST</http_method>
+        <name>Create Event</name>
+        <operation_script><![CDATA[(function process(/*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
+    try {
+        // Parse request body
+        var body = request.body.data;
+        var eventName = body.u_event_name;
+        var eventDate = body.u_event_date;
+        var location = body.u_location;
+        var contactPerson = body.u_contact_person;
+
+        // Validate required fields
+        if (!eventName || !eventDate || !location || !contactPerson) {
+            response.setStatus(400);
+            return response.setBody({ error: "Missing required fields." });
+        }
+
+        // Create a new event record in ServiceNow
+        var eventGR = new GlideRecord('x_1419495_event_event_record'); // Replace with actual table name
+		gs.info('Inserting into table: ' + eventGR.getTableName());
+        eventGR.initialize();
+        eventGR.u_event_name = eventName;
+        eventGR.u_event_date = eventDate;
+        eventGR.u_location = location;
+        eventGR.u_contact_person = contactPerson;
+        var sysID = eventGR.insert();
+		gs.info('Inserted Event Record ID: ' + sysID);
+
+        // Success response
+        response.setStatus(201);
+        return response.setBody({
+            message: "Event created successfully.",
+            event_id: eventGR.sys_id
+        });
+
+    } catch (error) {
+        response.setStatus(500);
+        return response.setBody({ error: error.message });
+    }
+})(request, response);
+]]></operation_script>
+        <operation_uri>/api/x_1419495_event/create_event_records/create-event</operation_uri>
+        <produces>application/json,application/xml,text/xml</produces>
+        <produces_customized>false</produces_customized>
+        <relative_path>/create-event</relative_path>
+        <request_example/>
+        <requires_acl_authorization>true</requires_acl_authorization>
+        <requires_authentication>true</requires_authentication>
+        <requires_snc_internal_role>true</requires_snc_internal_role>
+        <short_description/>
+        <sys_class_name>sys_ws_operation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-01 14:29:34</sys_created_on>
+        <sys_id>858e0b85838862101d61f855eeaad3c0</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Create Event</sys_name>
+        <sys_package display_value="Event Management" source="x_1419495_event">fd08c2b0830022101d61f855eeaad39a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Event Management">fd08c2b0830022101d61f855eeaad39a</sys_scope>
+        <sys_update_name>sys_ws_operation_858e0b85838862101d61f855eeaad3c0</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-01 14:41:15</sys_updated_on>
+        <web_service_definition display_value="Create Event Records">2f2e0385838862101d61f855eeaad3c7</web_service_definition>
+        <web_service_version/>
+    </sys_ws_operation>
+    <sys_es_latest_script action="DELETE">
+        <id>858e0b85838862101d61f855eeaad3c0</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-01 14:29:33</sys_created_on>
+        <sys_id>5e4f4f85838862101d61f855eeaad3d7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-01 14:29:33</sys_updated_on>
+        <table>sys_ws_operation</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Event Management">fd08c2b0830022101d61f855eeaad39a</application>
+        <file_path/>
+        <instance_id>327bf095db4dc69037d72a591396198e</instance_id>
+        <instance_name>dev244205</instance_name>
+        <name>sys_ws_operation_858e0b85838862101d61f855eeaad3c0</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ws_operation"&gt;&lt;sys_ws_operation action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;consumes&gt;application/json,application/xml,text/xml&lt;/consumes&gt;&lt;consumes_customized&gt;false&lt;/consumes_customized&gt;&lt;default_operation_uri/&gt;&lt;enforce_acl&gt;cf9d01d3e73003009d6247e603f6a990&lt;/enforce_acl&gt;&lt;http_method&gt;POST&lt;/http_method&gt;&lt;name&gt;Create Event&lt;/name&gt;&lt;operation_script&gt;&lt;![CDATA[(function process(/*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
+    try {
+        // Parse request body
+        var body = request.body.data;
+        var eventName = body.u_event_name;
+        var eventDate = body.u_event_date;
+        var location = body.u_location;
+        var contactPerson = body.u_contact_person;
+
+        // Validate required fields
+        if (!eventName || !eventDate || !location || !contactPerson) {
+            response.setStatus(400);
+            return response.setBody({ error: "Missing required fields." });
+        }
+
+        // Create a new event record in ServiceNow
+        var eventGR = new GlideRecord('x_1419495_event_event_record'); // Replace with actual table name
+		gs.info('Inserting into table: ' + eventGR.getTableName());
+        eventGR.initialize();
+        eventGR.u_event_name = eventName;
+        eventGR.u_event_date = eventDate;
+        eventGR.u_location = location;
+        eventGR.u_contact_person = contactPerson;
+        var sysID = eventGR.insert();
+		gs.info('Inserted Event Record ID: ' + sysID);
+
+        // Success response
+        response.setStatus(201);
+        return response.setBody({
+            message: "Event created successfully.",
+            event_id: eventGR.sys_id
+        });
+
+    } catch (error) {
+        response.setStatus(500);
+        return response.setBody({ error: error.message });
+    }
+})(request, response);
+]]&gt;&lt;/operation_script&gt;&lt;operation_uri&gt;/api/x_1419495_event/create_event_records/create-event&lt;/operation_uri&gt;&lt;produces&gt;application/json,application/xml,text/xml&lt;/produces&gt;&lt;produces_customized&gt;false&lt;/produces_customized&gt;&lt;relative_path&gt;/create-event&lt;/relative_path&gt;&lt;request_example/&gt;&lt;requires_acl_authorization&gt;true&lt;/requires_acl_authorization&gt;&lt;requires_authentication&gt;true&lt;/requires_authentication&gt;&lt;requires_snc_internal_role&gt;true&lt;/requires_snc_internal_role&gt;&lt;short_description/&gt;&lt;sys_class_name&gt;sys_ws_operation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-03-01 14:29:34&lt;/sys_created_on&gt;&lt;sys_id&gt;858e0b85838862101d61f855eeaad3c0&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name&gt;Create Event&lt;/sys_name&gt;&lt;sys_package display_value="Event Management" source="x_1419495_event"&gt;fd08c2b0830022101d61f855eeaad39a&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Event Management"&gt;fd08c2b0830022101d61f855eeaad39a&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ws_operation_858e0b85838862101d61f855eeaad3c0&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-03-01 14:41:15&lt;/sys_updated_on&gt;&lt;web_service_definition display_value="Create Event Records"&gt;2f2e0385838862101d61f855eeaad3c7&lt;/web_service_definition&gt;&lt;web_service_version/&gt;&lt;/sys_ws_operation&gt;&lt;sys_es_latest_script action="INSERT_OR_UPDATE"&gt;&lt;id&gt;858e0b85838862101d61f855eeaad3c0&lt;/id&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-03-01 14:29:33&lt;/sys_created_on&gt;&lt;sys_id&gt;5e4f4f85838862101d61f855eeaad3d7&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-03-01 14:29:33&lt;/sys_updated_on&gt;&lt;table&gt;sys_ws_operation&lt;/table&gt;&lt;use_es_latest&gt;true&lt;/use_es_latest&gt;&lt;/sys_es_latest_script&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-593820589</payload_hash>
+        <record_name>Create Event</record_name>
+        <reverted_from/>
+        <source>a2f8667083c022101d61f855eeaad3bb</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-01 14:41:16</sys_created_on>
+        <sys_id>b5f1d3c9838862101d61f855eeaad395</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1955227831f0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-01 14:41:16</sys_updated_on>
+        <type>Scripted REST Resource</type>
+        <update_guid>7df1d3c949886210ff763f61b2a28194</update_guid>
+        <update_guid_history>7df1d3c949886210ff763f61b2a28194:-593820589,b6c1db895b886210654536007d1f82d8:-28853761,5e4fc3c50d88621011d8c3d1c0efb6e5:-1771228839</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-01 14:59:28</sys_created_on>
+        <sys_db_object display_value="" name="sys_ws_operation">sys_ws_operation</sys_db_object>
+        <sys_id>432240c276834b10a37539fccdfa9900</sys_id>
+        <sys_metadata>858e0b85838862101d61f855eeaad3c0</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Create Event</sys_name>
+        <sys_package display_value="Event Management" source="x_1419495_event">fd08c2b0830022101d61f855eeaad39a</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Event Management">fd08c2b0830022101d61f855eeaad39a</sys_scope>
+        <sys_scope_delete display_value="">909d60b3437b482594cc4c5e818e53c1</sys_scope_delete>
+        <sys_update_name>sys_ws_operation_858e0b85838862101d61f855eeaad3c0</sys_update_name>
+        <sys_update_version display_value="sys_ws_operation_858e0b85838862101d61f855eeaad3c0">b5f1d3c9838862101d61f855eeaad395</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-01 14:59:28</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

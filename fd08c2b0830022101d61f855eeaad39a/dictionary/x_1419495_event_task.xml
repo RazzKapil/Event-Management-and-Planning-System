@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" db_object_id="4ecd26f483c022101d61f855eeaad379" extends="task" label="Event Task" max_length="40" name="x_1419495_event_task" type="collection">
+        <element label="Reminder Status" max_length="40" name="u_reminder_status" read_only="true" type="boolean"/>
+        <element attributes="encode_utf8=false" label="Event ID" max_length="32" name="event_id" reference="x_1419495_event_event_record" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Status" max_length="40" name="u_status" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Not Started" sequence="1" value="not started"/>
+                <element inactive_on_update="false" label="New" sequence="0" value="new"/>
+                <element inactive_on_update="false" label="Completed" sequence="3" value="completed"/>
+                <element inactive_on_update="false" label="In Progress" sequence="2" value="in progress"/>
+                <element inactive_on_update="false" label="Cancelled" sequence="4" value="cancelled"/>
+            </choice>
+        </element>
+        <element label="Completed" max_length="40" name="completed" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" label="Task Name" max_length="40" name="u_task_name" type="string"/>
+    </element>
+</database>

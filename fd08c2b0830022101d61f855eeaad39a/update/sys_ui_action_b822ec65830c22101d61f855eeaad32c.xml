@@ -7,7 +7,7 @@
 
 }]]></client_script_v2>
         <comments/>
-        <condition>gs.hasRole('x_1419495_event.event_user')</condition>
+        <condition/>
         <form_action>true</form_action>
         <form_button>true</form_button>
         <form_button_v2>false</form_button_v2>
@@ -28,32 +28,22 @@
         <list_style/>
         <messages/>
         <name>Submit Feedback</name>
-        <onclick>submitFeedback()</onclick>
+        <onclick>onClick()</onclick>
         <order>100</order>
-        <script><![CDATA[function submitFeedback() {
-    var ratingOptions = ["Excellent", "Good", "Average", "Poor"];
-    var rating = prompt("Rate the event: Excellent, Good, Average, or Poor");
-
-    if (!rating || !ratingOptions.includes(rating)) {
-        alert("Invalid rating. Please enter Excellent, Good, Average, or Poor.");
-        return;
-    }
-
-    var ga = new GlideAjax('FeedbackSubmission');
-    ga.addParam('sysparm_name', 'createFeedback');
-    ga.addParam('sysparm_attendee_id', g_form.getUniqueValue());
-    ga.addParam('sysparm_event_id', g_form.getValue('u_event_id'));
-    ga.addParam('sysparm_rating', rating);
-
-    ga.getXMLAnswer(function(response) {
-        if (response === 'success') {
-            g_form.addInfoMessage("Thank you for your feedback!");
-        } else {
-            g_form.addErrorMessage("Failed to submit feedback. Please try again.");
-        }
-    });
-}
-]]></script>
+        <script><![CDATA[function onClick(){
+    var _number=g_form.getValue('number');
+    var _comments=g_form.getValue('u_comments');
+    var _attendeeID=g_form.getValue('u_attendee_id');
+    var _eventid=g_form.getValue('u_event_id');
+    var _rating=g_form.getValue('u_rating');
+    g_form.setValue('number',_number);
+    g_form.setValue('comments',_comments);
+    g_form.setValue('u_attendee_id',_attendeeID);
+    g_form.setValue('u_event_id',_eventid);
+    g_form.setValue('u_rating',_rating);
+    g_form.save();
+    alert('Thank you for your feedback');
+}]]></script>
         <show_insert>true</show_insert>
         <show_multiple_update>false</show_multiple_update>
         <show_query>false</show_query>
@@ -64,7 +54,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>b822ec65830c22101d61f855eeaad32c</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>Submit Feedback</sys_name>
         <sys_overrides/>
         <sys_package display_value="Event Management" source="x_1419495_event">fd08c2b0830022101d61f855eeaad39a</sys_package>
@@ -72,8 +62,8 @@
         <sys_scope display_value="Event Management">fd08c2b0830022101d61f855eeaad39a</sys_scope>
         <sys_update_name>sys_ui_action_b822ec65830c22101d61f855eeaad32c</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-03-02 15:29:33</sys_updated_on>
-        <table>x_1419495_event_attendee</table>
+        <sys_updated_on>2025-03-03 07:05:16</sys_updated_on>
+        <table>x_1419495_event_feedback</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>
     </sys_ui_action>

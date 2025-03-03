@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section action="DELETE" caption="Task Details" section_id="dc940b78834422101d61f855eeaad3de" sys_domain="global" table="x_1419495_event_task" version="3" view="Coordinator_View">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>number</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-02-28 19:04:15</sys_created_on>
+            <sys_id>98944b78834422101d61f855eeaad361</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Task Details" display_value="Task Details" name="x_1419495_event_task" sys_domain="global" view="60b4da34834022101d61f855eeaad36f">dc940b78834422101d61f855eeaad3de</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-02-28 19:04:15</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>event_id</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-02-28 19:04:15</sys_created_on>
+            <sys_id>10944b78834422101d61f855eeaad362</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Task Details" display_value="Task Details" name="x_1419495_event_task" sys_domain="global" view="60b4da34834022101d61f855eeaad36f">dc940b78834422101d61f855eeaad3de</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-02-28 19:04:15</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_task_name</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-02-28 19:04:15</sys_created_on>
+            <sys_id>94944b78834422101d61f855eeaad362</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Task Details" display_value="Task Details" name="x_1419495_event_task" sys_domain="global" view="60b4da34834022101d61f855eeaad36f">dc940b78834422101d61f855eeaad3de</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-02-28 19:04:15</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-02-28 19:04:15</sys_created_on>
+            <sys_id>1c944b78834422101d61f855eeaad362</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Task Details" display_value="Task Details" name="x_1419495_event_task" sys_domain="global" view="60b4da34834022101d61f855eeaad36f">dc940b78834422101d61f855eeaad3de</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-02-28 19:04:15</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>assigned_to</element>
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-02-28 19:04:15</sys_created_on>
+            <sys_id>90944b78834422101d61f855eeaad363</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Task Details" display_value="Task Details" name="x_1419495_event_task" sys_domain="global" view="60b4da34834022101d61f855eeaad36f">dc940b78834422101d61f855eeaad3de</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-02-28 19:04:15</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_due_date</element>
+            <position>5</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-02-28 19:04:15</sys_created_on>
+            <sys_id>18944b78834422101d61f855eeaad363</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Task Details" display_value="Task Details" name="x_1419495_event_task" sys_domain="global" view="60b4da34834022101d61f855eeaad36f">dc940b78834422101d61f855eeaad3de</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-02-28 19:04:15</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_status</element>
+            <position>6</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-02-28 19:04:15</sys_created_on>
+            <sys_id>9c944b78834422101d61f855eeaad363</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Task Details" display_value="Task Details" name="x_1419495_event_task" sys_domain="global" view="60b4da34834022101d61f855eeaad36f">dc940b78834422101d61f855eeaad3de</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-02-28 19:04:15</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="DELETE">
+            <caption>Task Details</caption>
+            <header>false</header>
+            <name>x_1419495_event_task</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-02-28 19:04:14</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>dc940b78834422101d61f855eeaad3de</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_1419495_event_task</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Event Management" source="x_1419495_event">fd08c2b0830022101d61f855eeaad39a</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Event Management">fd08c2b0830022101d61f855eeaad39a</sys_scope>
+            <sys_update_name>sys_ui_section_dc940b78834422101d61f855eeaad3de</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-02-28 19:04:14</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Coordinator View" name="coordinator_view">60b4da34834022101d61f855eeaad36f</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Event Management">fd08c2b0830022101d61f855eeaad39a</application>
+        <file_path/>
+        <instance_id>327bf095db4dc69037d72a591396198e</instance_id>
+        <instance_name>dev244205</instance_name>
+        <name>sys_ui_section_dc940b78834422101d61f855eeaad3de</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_section caption="Task Details" section_id="dc940b78834422101d61f855eeaad3de" sys_domain="global" table="x_1419495_event_task" version="3" view="Coordinator_View"><sys_ui_element action="INSERT_OR_UPDATE"><element>number</element><position>0</position><sys_created_by>admin</sys_created_by><sys_created_on>2025-02-28 19:04:15</sys_created_on><sys_id>98944b78834422101d61f855eeaad361</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Task Details" display_value="Task Details" name="x_1419495_event_task" sys_domain="global" view="60b4da34834022101d61f855eeaad36f">dc940b78834422101d61f855eeaad3de</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-02-28 19:04:15</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>event_id</element><position>1</position><sys_created_by>admin</sys_created_by><sys_created_on>2025-02-28 19:04:15</sys_created_on><sys_id>10944b78834422101d61f855eeaad362</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Task Details" display_value="Task Details" name="x_1419495_event_task" sys_domain="global" view="60b4da34834022101d61f855eeaad36f">dc940b78834422101d61f855eeaad3de</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-02-28 19:04:15</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>u_task_name</element><position>2</position><sys_created_by>admin</sys_created_by><sys_created_on>2025-02-28 19:04:15</sys_created_on><sys_id>94944b78834422101d61f855eeaad362</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Task Details" display_value="Task Details" name="x_1419495_event_task" sys_domain="global" view="60b4da34834022101d61f855eeaad36f">dc940b78834422101d61f855eeaad3de</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-02-28 19:04:15</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>.split</element><position>3</position><sys_created_by>admin</sys_created_by><sys_created_on>2025-02-28 19:04:15</sys_created_on><sys_id>1c944b78834422101d61f855eeaad362</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Task Details" display_value="Task Details" name="x_1419495_event_task" sys_domain="global" view="60b4da34834022101d61f855eeaad36f">dc940b78834422101d61f855eeaad3de</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-02-28 19:04:15</sys_updated_on><sys_user/><type>.split</type></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>assigned_to</element><position>4</position><sys_created_by>admin</sys_created_by><sys_created_on>2025-02-28 19:04:15</sys_created_on><sys_id>90944b78834422101d61f855eeaad363</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Task Details" display_value="Task Details" name="x_1419495_event_task" sys_domain="global" view="60b4da34834022101d61f855eeaad36f">dc940b78834422101d61f855eeaad3de</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-02-28 19:04:15</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>u_due_date</element><position>5</position><sys_created_by>admin</sys_created_by><sys_created_on>2025-02-28 19:04:15</sys_created_on><sys_id>18944b78834422101d61f855eeaad363</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Task Details" display_value="Task Details" name="x_1419495_event_task" sys_domain="global" view="60b4da34834022101d61f855eeaad36f">dc940b78834422101d61f855eeaad3de</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-02-28 19:04:15</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>u_status</element><position>6</position><sys_created_by>admin</sys_created_by><sys_created_on>2025-02-28 19:04:15</sys_created_on><sys_id>9c944b78834422101d61f855eeaad363</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Task Details" display_value="Task Details" name="x_1419495_event_task" sys_domain="global" view="60b4da34834022101d61f855eeaad36f">dc940b78834422101d61f855eeaad3de</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-02-28 19:04:15</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_section action="INSERT_OR_UPDATE"><caption>Task Details</caption><header>false</header><name>x_1419495_event_task</name><roles/><sys_class_name>sys_ui_section</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-02-28 19:04:14</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>dc940b78834422101d61f855eeaad3de</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1419495_event_task</sys_name><sys_overrides/><sys_package display_value="Event Management" source="x_1419495_event">fd08c2b0830022101d61f855eeaad39a</sys_package><sys_policy/><sys_scope display_value="Event Management">fd08c2b0830022101d61f855eeaad39a</sys_scope><sys_update_name>sys_ui_section_dc940b78834422101d61f855eeaad3de</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-02-28 19:04:14</sys_updated_on><sys_user/><title>false</title><view display_value="Coordinator View" name="coordinator_view">60b4da34834022101d61f855eeaad36f</view><view_name/></sys_ui_section></sys_ui_section></record_update>]]></payload>
+        <payload_hash>-1620832856</payload_hash>
+        <record_name>Event Task</record_name>
+        <reverted_from/>
+        <source>a2f8667083c022101d61f855eeaad3bb</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-28 19:04:15</sys_created_on>
+        <sys_id>90944b78834422101d61f855eeaad366</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1954df1edb30000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-28 19:04:15</sys_updated_on>
+        <type>Form Layout</type>
+        <update_guid>18944b78c7442210417778e5d178a565</update_guid>
+        <update_guid_history>18944b78c7442210417778e5d178a565:-1620832856</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-01 04:56:16</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_section">sys_ui_section</sys_db_object>
+        <sys_id>05466b72c96a45549750953dd25d17f1</sys_id>
+        <sys_metadata>dc940b78834422101d61f855eeaad3de</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Task Details</sys_name>
+        <sys_package display_value="Event Management" source="x_1419495_event">fd08c2b0830022101d61f855eeaad39a</sys_package>
+        <sys_parent display_value="Event Task">4ecd26f483c022101d61f855eeaad379</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Event Management">fd08c2b0830022101d61f855eeaad39a</sys_scope>
+        <sys_scope_delete display_value="">909d60b3437b482594cc4c5e818e53c1</sys_scope_delete>
+        <sys_update_name>sys_ui_section_dc940b78834422101d61f855eeaad3de</sys_update_name>
+        <sys_update_version display_value="sys_ui_section_dc940b78834422101d61f855eeaad3de">90944b78834422101d61f855eeaad366</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-01 04:56:16</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl">
+    <sys_security_acl action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <admin_overrides>true</admin_overrides>
+        <advanced>true</advanced>
+        <applies_to/>
+        <condition/>
+        <decision_type>allow</decision_type>
+        <description>Default access control on x_1419495_event_event_record</description>
+        <local_or_existing>Local</local_or_existing>
+        <name>x_1419495_event_event_record.contact_number</name>
+        <operation display_value="read">read</operation>
+        <script><![CDATA[answer=false;
+if(gs.hasRole('x_1419495_event.event_admin') || gs.hasRole('x_1419495_event.event_manager') || gs.hasRole("x_1419495_event.event_planner")){
+	answer=true;
+}]]></script>
+        <security_attribute/>
+        <sys_class_name>sys_security_acl</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-03 10:48:05</sys_created_on>
+        <sys_id>e9cfe87d8300a2101d61f855eeaad3b8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1419495_event_event_record.contact_number</sys_name>
+        <sys_package display_value="Event Management" source="x_1419495_event">fd08c2b0830022101d61f855eeaad39a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Event Management">fd08c2b0830022101d61f855eeaad39a</sys_scope>
+        <sys_update_name>sys_security_acl_e9cfe87d8300a2101d61f855eeaad3b8</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-03 10:48:05</sys_updated_on>
+        <type display_value="record">record</type>
+    </sys_security_acl>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>e9cfe87d8300a2101d61f855eeaad3b8</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-03 10:52:29</sys_created_on>
+        <sys_id>06c0b0318340a2101d61f855eeaad376</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-03 10:52:29</sys_updated_on>
+        <table>sys_security_acl</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

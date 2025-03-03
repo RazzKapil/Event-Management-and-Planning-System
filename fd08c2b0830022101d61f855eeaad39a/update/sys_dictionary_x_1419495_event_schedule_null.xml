@@ -52,7 +52,6 @@
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-02-28 19:22:57</sys_created_on>
-        <sys_id>5ed887fc834422101d61f855eeaad3de</sys_id>
         <sys_name>x_1419495_event_schedule</sys_name>
         <sys_package display_value="Event Management" source="x_1419495_event">fd08c2b0830022101d61f855eeaad39a</sys_package>
         <sys_policy/>

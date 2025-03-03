@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="DELETE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_1419495_event.EventUtils</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>EventUtils</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var EventUtils = Class.create();
+EventUtils.prototype = {
+    initialize: function() {},
+    getEventDetails: function(eventId) {
+        var eventGR = new GlideRecord('x_1419495_event_event_record');
+
+        if (eventGR.get(eventId)) {
+            return eventGR;
+        } else {
+            gs.error('Event not found: ' + eventId);
+            return null;
+        }
+    },
+    isEventVIP: function(eventId) {
+        var eventGR = this.getEventDetails(eventId);
+        if (eventGR) {
+            return eventGR.getValue('vip') == true;
+        }
+        return false;
+    },
+    calculateRemainingBudget: function(eventId) {
+        var remaining;
+        var budgetGR = new GlideRecord("x_1419495_event_budget");
+        budgetGR.addEncodedQuery("event_id="+eventId);
+        budgetGR.query();
+        while (budgetGR.next()) {
+            remaining = parseFloat(budgetGR.getValue("amount_remaining"));
+        }
+        return remaining;
+    },
+    getEventTasks: function(eventId) {
+        return this._getRelatedRecords('x_1419495_event_task', 'event_id', eventId);
+    },
+    getEventAttendees: function(eventId) {
+        return this._getRelatedRecords('x_1419495_event_attendee', 'event_id', eventId);
+    },
+    getEventVendors: function(eventId) {
+        return this._getRelatedRecords('x_1419495_event_vendor', 'event_id', eventId);
+    },
+    getEventBudgetDetails: function(eventId) {
+        return this._getRelatedRecords('x_1419495_event_budget', 'event_id', eventId);
+    },
+    getEventFeedback: function(eventId) {
+        return this._getRelatedRecords('x_1419495_event_feedback', 'u_event_id', eventId);
+    },
+
+    _getRelatedRecords: function(tableName, referenceField, eventId) {
+        var relatedGR = new GlideRecord(tableName);
+        relatedGR.addEncodedQuery(referenceField+"="+eventId);
+        relatedGR.query();
+        var results = [];
+        while (relatedGR.next()) {
+            results.push(relatedGR.getDisplayValue());
+        }
+        return results;
+    },
+    type: 'EventUtils'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-02 04:30:26</sys_created_on>
+        <sys_id>dbca4a51830022101d61f855eeaad314</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name>EventUtils</sys_name>
+        <sys_package display_value="Event Management" source="x_1419495_event">fd08c2b0830022101d61f855eeaad39a</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Event Management">fd08c2b0830022101d61f855eeaad39a</sys_scope>
+        <sys_update_name>sys_script_include_dbca4a51830022101d61f855eeaad314</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-02 04:54:57</sys_updated_on>
+    </sys_script_include>
+    <sys_es_latest_script action="DELETE">
+        <id>dbca4a51830022101d61f855eeaad314</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-02 04:30:25</sys_created_on>
+        <sys_id>afbf8ed5830022101d61f855eeaad372</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-02 04:30:25</sys_updated_on>
+        <table>sys_script_include</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Event Management">fd08c2b0830022101d61f855eeaad39a</application>
+        <file_path/>
+        <instance_id>327bf095db4dc69037d72a591396198e</instance_id>
+        <instance_name>dev244205</instance_name>
+        <name>sys_script_include_dbca4a51830022101d61f855eeaad314</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;x_1419495_event.EventUtils&lt;/api_name&gt;&lt;caller_access/&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;description/&gt;&lt;mobile_callable&gt;false&lt;/mobile_callable&gt;&lt;name&gt;EventUtils&lt;/name&gt;&lt;sandbox_callable&gt;false&lt;/sandbox_callable&gt;&lt;script&gt;&lt;![CDATA[var EventUtils = Class.create();
+EventUtils.prototype = {
+    initialize: function() {},
+    getEventDetails: function(eventId) {
+        var eventGR = new GlideRecord('x_1419495_event_event_record');
+
+        if (eventGR.get(eventId)) {
+            return eventGR;
+        } else {
+            gs.error('Event not found: ' + eventId);
+            return null;
+        }
+    },
+    isEventVIP: function(eventId) {
+        var eventGR = this.getEventDetails(eventId);
+        if (eventGR) {
+            return eventGR.getValue('vip') == true;
+        }
+        return false;
+    },
+    calculateRemainingBudget: function(eventId) {
+        var remaining;
+        var budgetGR = new GlideRecord("x_1419495_event_budget");
+        budgetGR.addEncodedQuery("event_id="+eventId);
+        budgetGR.query();
+        while (budgetGR.next()) {
+            remaining = parseFloat(budgetGR.getValue("amount_remaining"));
+        }
+        return remaining;
+    },
+    getEventTasks: function(eventId) {
+        return this._getRelatedRecords('x_1419495_event_task', 'event_id', eventId);
+    },
+    getEventAttendees: function(eventId) {
+        return this._getRelatedRecords('x_1419495_event_attendee', 'event_id', eventId);
+    },
+    getEventVendors: function(eventId) {
+        return this._getRelatedRecords('x_1419495_event_vendor', 'event_id', eventId);
+    },
+    getEventBudgetDetails: function(eventId) {
+        return this._getRelatedRecords('x_1419495_event_budget', 'event_id', eventId);
+    },
+    getEventFeedback: function(eventId) {
+        return this._getRelatedRecords('x_1419495_event_feedback', 'u_event_id', eventId);
+    },
+
+    _getRelatedRecords: function(tableName, referenceField, eventId) {
+        var relatedGR = new GlideRecord(tableName);
+        relatedGR.addEncodedQuery(referenceField+"="+eventId);
+        relatedGR.query();
+        var results = [];
+        while (relatedGR.next()) {
+            results.push(relatedGR.getDisplayValue());
+        }
+        return results;
+    },
+    type: 'EventUtils'
+};]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-03-02 04:30:26&lt;/sys_created_on&gt;&lt;sys_id&gt;dbca4a51830022101d61f855eeaad314&lt;/sys_id&gt;&lt;sys_mod_count&gt;9&lt;/sys_mod_count&gt;&lt;sys_name&gt;EventUtils&lt;/sys_name&gt;&lt;sys_package display_value="Event Management" source="x_1419495_event"&gt;fd08c2b0830022101d61f855eeaad39a&lt;/sys_package&gt;&lt;sys_policy&gt;read&lt;/sys_policy&gt;&lt;sys_scope display_value="Event Management"&gt;fd08c2b0830022101d61f855eeaad39a&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_dbca4a51830022101d61f855eeaad314&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-03-02 04:54:57&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;sys_es_latest_script action="INSERT_OR_UPDATE"&gt;&lt;id&gt;dbca4a51830022101d61f855eeaad314&lt;/id&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-03-02 04:30:25&lt;/sys_created_on&gt;&lt;sys_id&gt;afbf8ed5830022101d61f855eeaad372&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-03-02 04:30:25&lt;/sys_updated_on&gt;&lt;table&gt;sys_script_include&lt;/table&gt;&lt;use_es_latest&gt;true&lt;/use_es_latest&gt;&lt;/sys_es_latest_script&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1134340212</payload_hash>
+        <record_name>EventUtils</record_name>
+        <reverted_from/>
+        <source>a2f8667083c022101d61f855eeaad3bb</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-02 04:54:57</sys_created_on>
+        <sys_id>7a559e9d830022101d61f855eeaad341</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>195553516300000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-02 04:54:57</sys_updated_on>
+        <type>Script Include</type>
+        <update_guid>f655565d030022107f13736d2c9ce66d</update_guid>
+        <update_guid_history>f655565d030022107f13736d2c9ce66d:1134340212,c6451e9d63002210d4c90dd2f984e875:556533721,1305929da400221065199b4214736765:1134340212,ee94d65dfa002210f0bfde56b2d911ae:-1638666674,9e93d61d6e00221020eccf0333a01b8d:128083997,19c19a190600221041eb76689297e2a4:856810348,04a152991400221033bd8d4272d78ef8:-753668005,95519a198d0022104046cafcf352d99f:-1312292355,91e01a594200221002d18de14d65e162:-939018077,b3bf8ed5460022108b410e3e0cfa1582:-1312292355</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-02 05:35:39</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_include">sys_script_include</sys_db_object>
+        <sys_id>097f540c1830494e83a99c0822fcdc44</sys_id>
+        <sys_metadata>dbca4a51830022101d61f855eeaad314</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>EventUtils</sys_name>
+        <sys_package display_value="Event Management" source="x_1419495_event">fd08c2b0830022101d61f855eeaad39a</sys_package>
+        <sys_parent/>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Event Management">fd08c2b0830022101d61f855eeaad39a</sys_scope>
+        <sys_scope_delete display_value="">909d60b3437b482594cc4c5e818e53c1</sys_scope_delete>
+        <sys_update_name>sys_script_include_dbca4a51830022101d61f855eeaad314</sys_update_name>
+        <sys_update_version display_value="sys_script_include_dbca4a51830022101d61f855eeaad314">7a559e9d830022101d61f855eeaad341</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-02 05:35:39</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

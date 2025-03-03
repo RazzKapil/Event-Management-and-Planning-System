@@ -12,7 +12,7 @@
         <form_button>true</form_button>
         <form_button_v2>false</form_button_v2>
         <form_context_menu>true</form_context_menu>
-        <form_link>false</form_link>
+        <form_link>true</form_link>
         <form_menu_button_v2>false</form_menu_button_v2>
         <form_style>destructive</form_style>
         <format_for_configurable_workspace>false</format_for_configurable_workspace>
@@ -65,7 +65,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>17a5031d830422101d61f855eeaad32d</sys_id>
-        <sys_mod_count>9</sys_mod_count>
+        <sys_mod_count>16</sys_mod_count>
         <sys_name>Reschedule</sys_name>
         <sys_overrides/>
         <sys_package display_value="Event Management" source="x_1419495_event">fd08c2b0830022101d61f855eeaad39a</sys_package>
@@ -73,9 +73,9 @@
         <sys_scope display_value="Event Management">fd08c2b0830022101d61f855eeaad39a</sys_scope>
         <sys_update_name>sys_ui_action_17a5031d830422101d61f855eeaad32d</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-03-02 09:16:22</sys_updated_on>
+        <sys_updated_on>2025-03-03 12:32:26</sys_updated_on>
         <table>x_1419495_event_event_record</table>
-        <ui11_compatible>true</ui11_compatible>
+        <ui11_compatible>false</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>
     </sys_ui_action>
     <sys_es_latest_script action="INSERT_OR_UPDATE">
@@ -83,9 +83,9 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-03-02 08:42:12</sys_created_on>
         <sys_id>f3598bdd830422101d61f855eeaad3f8</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-03-02 08:42:12</sys_updated_on>
+        <sys_updated_on>2025-03-03 10:22:33</sys_updated_on>
         <table>sys_ui_action</table>
         <use_es_latest>false</use_es_latest>
     </sys_es_latest_script>

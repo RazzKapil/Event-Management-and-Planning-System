@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="de800b05834862101d61f855eeaad388" extends="task" label="Event Planners" max_length="40" name="x_1419495_event_event_planners" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Planner Name" max_length="40" name="planner_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Email" max_length="40" name="email" type="string"/>
+        <element attributes="encode_utf8=false" label="Event ID" max_length="32" name="event_id" reference="x_1419495_event_event_record" type="reference"/>
+    </element>
+</database>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_action">
+    <sys_ui_action action="INSERT_OR_UPDATE">
+        <action_name>approve_budget</action_name>
+        <active>true</active>
+        <client>true</client>
+        <client_script_v2><![CDATA[function onClick(g_form) {
+
+}]]></client_script_v2>
+        <comments/>
+        <condition/>
+        <form_action>true</form_action>
+        <form_button>true</form_button>
+        <form_button_v2>false</form_button_v2>
+        <form_context_menu>true</form_context_menu>
+        <form_link>false</form_link>
+        <form_menu_button_v2>false</form_menu_button_v2>
+        <form_style/>
+        <format_for_configurable_workspace>false</format_for_configurable_workspace>
+        <hint/>
+        <isolate_script>true</isolate_script>
+        <list_action>false</list_action>
+        <list_banner_button>false</list_banner_button>
+        <list_button>false</list_button>
+        <list_choice>false</list_choice>
+        <list_context_menu>false</list_context_menu>
+        <list_link>false</list_link>
+        <list_save_with_form_button>false</list_save_with_form_button>
+        <list_style/>
+        <messages/>
+        <name>Approve Budget</name>
+        <onclick>approveBudget()</onclick>
+        <order>100</order>
+        <script><![CDATA[function approveBudget() {
+    g_form.setValue('status', 'Approved');
+    alert('Budget Approved');
+    gsftSubmit(null, g_form.getFormElement(), 'approve_budget');
+}
+if (typeof window == 'undefined')
+    notifyApprover();
+ 
+ 
+function notifyApprover() {
+    gs.addInfoMessage('budget approved');
+    current.status = 'Approved';
+    current.update();
+    var managerEmail = gs.getUser().getEmail();
+    gs.eventQueue('x_1419495_event.notifybudgetamount', current, managerEmail);
+    action.setRedirectURL(current);
+}
+ ]]></script>
+        <show_insert>true</show_insert>
+        <show_multiple_update>false</show_multiple_update>
+        <show_query>false</show_query>
+        <show_update>true</show_update>
+        <sys_class_name>sys_ui_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-03 07:18:41</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>930dfb29830c62101d61f855eeaad383</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Approve Budget</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Event Management" source="x_1419495_event">fd08c2b0830022101d61f855eeaad39a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Event Management">fd08c2b0830022101d61f855eeaad39a</sys_scope>
+        <sys_update_name>sys_ui_action_930dfb29830c62101d61f855eeaad383</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-03 07:20:06</sys_updated_on>
+        <table>x_1419495_event_budget</table>
+        <ui11_compatible>true</ui11_compatible>
+        <ui16_compatible>false</ui16_compatible>
+    </sys_ui_action>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>930dfb29830c62101d61f855eeaad383</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-03 07:18:41</sys_created_on>
+        <sys_id>cedf336d830c62101d61f855eeaad329</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-03 07:18:41</sys_updated_on>
+        <table>sys_ui_action</table>
+        <use_es_latest>false</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

@@ -47,7 +47,6 @@
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-02-28 19:31:57</sys_created_on>
-        <sys_id>5aeac3b0838422101d61f855eeaad30c</sys_id>
         <sys_name>Rating</sys_name>
         <sys_package display_value="Event Management" source="x_1419495_event">fd08c2b0830022101d61f855eeaad39a</sys_package>
         <sys_policy/>

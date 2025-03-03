@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn">
+    <sys_rest_message_fn action="DELETE">
+        <authentication_type>inherit_from_parent</authentication_type>
+        <basic_auth_password/>
+        <basic_auth_profile/>
+        <basic_auth_user/>
+        <content/>
+        <function_name>Notify External System</function_name>
+        <http_method>post</http_method>
+        <lock>false</lock>
+        <oauth2_profile/>
+        <protocol_name/>
+        <qualified_name>Event Notification API [ Notify External System ]</qualified_name>
+        <rest_endpoint/>
+        <rest_message display_value="Event Notification API">2177b349834c62101d61f855eeaad3be</rest_message>
+        <sys_class_name>sys_rest_message_fn</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-01 17:39:00</sys_created_on>
+        <sys_id>cc7a334d834c62101d61f855eeaad337</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Notify External System</sys_name>
+        <sys_package display_value="Event Management" source="x_1419495_event">fd08c2b0830022101d61f855eeaad39a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Event Management">fd08c2b0830022101d61f855eeaad39a</sys_scope>
+        <sys_update_name>sys_rest_message_fn_cc7a334d834c62101d61f855eeaad337</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-01 17:39:00</sys_updated_on>
+        <use_basic_auth>false</use_basic_auth>
+        <use_mid_server/>
+        <use_mutual_auth>false</use_mutual_auth>
+    </sys_rest_message_fn>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Event Management">fd08c2b0830022101d61f855eeaad39a</application>
+        <file_path/>
+        <instance_id>327bf095db4dc69037d72a591396198e</instance_id>
+        <instance_name>dev244205</instance_name>
+        <name>sys_rest_message_fn_cc7a334d834c62101d61f855eeaad337</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn"><sys_rest_message_fn action="INSERT_OR_UPDATE"><authentication_type>inherit_from_parent</authentication_type><basic_auth_password/><basic_auth_profile/><basic_auth_user/><content/><function_name>Notify External System</function_name><http_method>post</http_method><lock>false</lock><oauth2_profile/><protocol_name/><qualified_name>Event Notification API [ Notify External System ]</qualified_name><rest_endpoint/><rest_message display_value="Event Notification API">2177b349834c62101d61f855eeaad3be</rest_message><sys_class_name>sys_rest_message_fn</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-03-01 17:39:00</sys_created_on><sys_id>cc7a334d834c62101d61f855eeaad337</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Notify External System</sys_name><sys_package display_value="Event Management" source="x_1419495_event">fd08c2b0830022101d61f855eeaad39a</sys_package><sys_policy/><sys_scope display_value="Event Management">fd08c2b0830022101d61f855eeaad39a</sys_scope><sys_update_name>sys_rest_message_fn_cc7a334d834c62101d61f855eeaad337</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-03-01 17:39:00</sys_updated_on><use_basic_auth>false</use_basic_auth><use_mid_server/><use_mutual_auth>false</use_mutual_auth></sys_rest_message_fn></record_update>]]></payload>
+        <payload_hash>1269411125</payload_hash>
+        <record_name>Notify External System</record_name>
+        <reverted_from/>
+        <source>a2f8667083c022101d61f855eeaad3bb</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-01 17:39:00</sys_created_on>
+        <sys_id>59aa374d834c62101d61f855eeaad394</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19552ca3c100000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-01 17:39:00</sys_updated_on>
+        <type>HTTP Method</type>
+        <update_guid>5daa374dd34c62102330e2c898378493</update_guid>
+        <update_guid_history>5daa374dd34c62102330e2c898378493:1269411125</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-01 17:51:12</sys_created_on>
+        <sys_db_object display_value="" name="sys_rest_message_fn">sys_rest_message_fn</sys_db_object>
+        <sys_id>1a0d8785f6ce4aae921584cb89af2fe4</sys_id>
+        <sys_metadata>cc7a334d834c62101d61f855eeaad337</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Notify External System</sys_name>
+        <sys_package display_value="Event Management" source="x_1419495_event">fd08c2b0830022101d61f855eeaad39a</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Event Management">fd08c2b0830022101d61f855eeaad39a</sys_scope>
+        <sys_scope_delete display_value="">909d60b3437b482594cc4c5e818e53c1</sys_scope_delete>
+        <sys_update_name>sys_rest_message_fn_cc7a334d834c62101d61f855eeaad337</sys_update_name>
+        <sys_update_version display_value="sys_rest_message_fn_cc7a334d834c62101d61f855eeaad337">59aa374d834c62101d61f855eeaad394</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-01 17:51:12</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

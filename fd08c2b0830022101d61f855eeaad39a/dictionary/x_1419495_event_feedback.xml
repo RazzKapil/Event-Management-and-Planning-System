@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" db_object_id="79454bb8834422101d61f855eeaad3e9" extends="task" label="Feedback" max_length="40" name="x_1419495_event_feedback" type="collection">
+        <element attributes="encode_utf8=false" label="Event ID" max_length="32" name="u_event_id" reference="x_1419495_event_event_record" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Comments" max_length="40" name="u_comments" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Status" max_length="40" name="status" type="string">
+            <choice>
+                <element inactive_on_update="false" label="New" sequence="0" value="new"/>
+                <element inactive_on_update="false" label="In Progress" sequence="1" value="in progress"/>
+                <element inactive_on_update="false" label="Complete" sequence="2" value="complete"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Rating" max_length="40" name="u_rating" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Average" sequence="2" value="average"/>
+                <element inactive_on_update="false" label="Good" sequence="1" value="good"/>
+                <element inactive_on_update="false" label="Poor" sequence="3" value="poor"/>
+                <element inactive_on_update="false" label="Excellent" sequence="0" value="excellent"/>
+            </choice>
+        </element>
+        <element attributes="encode_utf8=false" label="Attendee ID" max_length="32" name="u_attendee_id" reference="x_1419495_event_attendee" type="reference"/>
+    </element>
+</database>

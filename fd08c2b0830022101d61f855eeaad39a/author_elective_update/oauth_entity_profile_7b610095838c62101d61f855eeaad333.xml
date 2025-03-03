@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="oauth_entity_profile">
+    <oauth_entity_profile action="DELETE">
+        <default>false</default>
+        <grant_type>password</grant_type>
+        <jwt_provider/>
+        <name>OAuth for Event Notification</name>
+        <oauth_entity display_value="">5f61c495838c62101d61f855eeaad370</oauth_entity>
+        <saml2_assertion_producer/>
+        <sys_class_name>oauth_entity_profile</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-01 18:14:12</sys_created_on>
+        <sys_id>7b610095838c62101d61f855eeaad333</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>OAuth for Event Notification</sys_name>
+        <sys_package display_value="Event Management" source="x_1419495_event">fd08c2b0830022101d61f855eeaad39a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Event Management">fd08c2b0830022101d61f855eeaad39a</sys_scope>
+        <sys_update_name>oauth_entity_profile_7b610095838c62101d61f855eeaad333</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-01 18:14:12</sys_updated_on>
+    </oauth_entity_profile>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Event Management">fd08c2b0830022101d61f855eeaad39a</application>
+        <file_path/>
+        <instance_id>327bf095db4dc69037d72a591396198e</instance_id>
+        <instance_name>dev244205</instance_name>
+        <name>oauth_entity_profile_7b610095838c62101d61f855eeaad333</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="oauth_entity_profile"><oauth_entity_profile action="INSERT_OR_UPDATE"><default>false</default><grant_type>password</grant_type><jwt_provider/><name>OAuth for Event Notification</name><oauth_entity display_value="">5f61c495838c62101d61f855eeaad370</oauth_entity><saml2_assertion_producer/><sys_class_name>oauth_entity_profile</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-03-01 18:14:12</sys_created_on><sys_id>7b610095838c62101d61f855eeaad333</sys_id><sys_mod_count>0</sys_mod_count><sys_name>OAuth for Event Notification</sys_name><sys_package display_value="Event Management" source="x_1419495_event">fd08c2b0830022101d61f855eeaad39a</sys_package><sys_policy/><sys_scope display_value="Event Management">fd08c2b0830022101d61f855eeaad39a</sys_scope><sys_update_name>oauth_entity_profile_7b610095838c62101d61f855eeaad333</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-03-01 18:14:12</sys_updated_on></oauth_entity_profile></record_update>]]></payload>
+        <payload_hash>39880419</payload_hash>
+        <record_name>OAuth for Event Notification</record_name>
+        <reverted_from/>
+        <source>a2f8667083c022101d61f855eeaad3bb</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-01 18:14:12</sys_created_on>
+        <sys_id>4db2c819838c62101d61f855eeaad3db</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19552ea77600000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-01 18:14:12</sys_updated_on>
+        <type>OAuth Entity Profile</type>
+        <update_guid>41b2c819c28c621047503b00f684d0db</update_guid>
+        <update_guid_history>41b2c819c28c621047503b00f684d0db:39880419</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="OAuth for Event Notification">e4c20c19838c62101d61f855eeaad32c</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-01 18:14:27</sys_created_on>
+        <sys_db_object display_value="" name="oauth_entity_profile">oauth_entity_profile</sys_db_object>
+        <sys_id>2cef3adf72c443b0aad13ba36844c184</sys_id>
+        <sys_metadata>7b610095838c62101d61f855eeaad333</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>OAuth for Event Notification</sys_name>
+        <sys_package display_value="Event Management" source="x_1419495_event">fd08c2b0830022101d61f855eeaad39a</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Event Management">fd08c2b0830022101d61f855eeaad39a</sys_scope>
+        <sys_scope_delete display_value="">909d60b3437b482594cc4c5e818e53c1</sys_scope_delete>
+        <sys_update_name>oauth_entity_profile_7b610095838c62101d61f855eeaad333</sys_update_name>
+        <sys_update_version display_value="oauth_entity_profile_7b610095838c62101d61f855eeaad333">4db2c819838c62101d61f855eeaad3db</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-01 18:14:27</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
