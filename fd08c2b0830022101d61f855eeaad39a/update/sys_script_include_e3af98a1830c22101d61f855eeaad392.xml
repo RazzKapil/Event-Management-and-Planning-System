@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_1419495_event.AttendeeRegistration</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>AttendeeRegistration</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var AttendeeRegistration = Class.create();
+AttendeeRegistration.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+
+    createAttendee: function() {
+        var eventId = this.getParameter('sysparm_event_id');
+        var firstName = this.getParameter('sysparm_first_name');
+        var lastName = this.getParameter('sysparm_last_name');
+        var attendeeEmail = this.getParameter('sysparm_attendee_email');
+
+        if (!eventId || !firstName || !lastName || !attendeeEmail) {
+            return 'error';
+        }
+
+        var attendee = new GlideRecord('x_1419495_event_attendee'); 
+        attendee.initialize();
+        attendee.setValue('event', eventId);
+        attendee.setValue('first_name', firstName);
+        attendee.setValue('last_name', lastName);
+        attendee.setValue('email', attendeeEmail);
+        attendee.insert();
+
+        return 'success';
+    }
+});
+]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-02 15:03:01</sys_created_on>
+        <sys_id>e3af98a1830c22101d61f855eeaad392</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>AttendeeRegistration</sys_name>
+        <sys_package display_value="Event Management" source="x_1419495_event">fd08c2b0830022101d61f855eeaad39a</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Event Management">fd08c2b0830022101d61f855eeaad39a</sys_scope>
+        <sys_update_name>sys_script_include_e3af98a1830c22101d61f855eeaad392</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-02 15:07:48</sys_updated_on>
+    </sys_script_include>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>e3af98a1830c22101d61f855eeaad392</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-02 15:03:01</sys_created_on>
+        <sys_id>4e80e8e1830c22101d61f855eeaad372</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-02 15:03:01</sys_updated_on>
+        <table>sys_script_include</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

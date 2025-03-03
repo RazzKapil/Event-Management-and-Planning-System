@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>false</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_1419495_event_task</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition table="x_1419495_event_task">assigned_toVALCHANGES^EQ<item endquery="false" field="assigned_to" goto="false" newquery="false" operator="VALCHANGES" or="false" value=""/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter_condition>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Trigger Task Assignment Notification</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+    try {
+        if (!current.assigned_to || current.assigned_to == previous.assigned_to) {
+            return; // Exit if no assignment change
+        }
+
+        var restMessage = new sn_ws.RESTMessageV2('Notify External System - Task Assignment', 'Send Task Assignment Notification');
+        
+        // Set parameters dynamically
+        restMessage.setStringParameter('sys_id', current.sys_id.toString());
+        restMessage.setStringParameter('u_task_name', current.short_description.toString());
+        restMessage.setStringParameter('event_id', current.event_id.toString());
+        restMessage.setStringParameter('assigned_to', current.assigned_to.toString());
+        restMessage.setStringParameter('due_date', current.due_date.toString());
+        restMessage.setStringParameter('u_status', current.state.toString());
+
+        // Execute REST message
+        var response = restMessage.execute();
+        var httpStatus = response.getStatusCode();
+        var responseBody = response.getBody();
+        
+        // Log response for debugging
+        gs.info('Task Assignment Notification Response: Status=' + httpStatus + ', Body=' + responseBody);
+
+    } catch (error) {
+        gs.error('Error sending task assignment notification: ' + error.message);
+    }
+})(current, previous);
+]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-01 19:31:19</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>c9f3109d83cc62101d61f855eeaad315</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Trigger Task Assignment Notification</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Event Management" source="x_1419495_event">fd08c2b0830022101d61f855eeaad39a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Event Management">fd08c2b0830022101d61f855eeaad39a</sys_scope>
+        <sys_update_name>sys_script_c9f3109d83cc62101d61f855eeaad315</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-01 19:31:19</sys_updated_on>
+        <template/>
+        <when>after</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=c9f3109d83cc62101d61f855eeaad315"/>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>c9f3109d83cc62101d61f855eeaad315</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-01 19:31:18</sys_created_on>
+        <sys_id>6a54509d83cc62101d61f855eeaad34c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-01 19:31:18</sys_updated_on>
+        <table>sys_script</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

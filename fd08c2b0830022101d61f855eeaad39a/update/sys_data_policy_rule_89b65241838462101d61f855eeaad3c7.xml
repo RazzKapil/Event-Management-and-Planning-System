@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_data_policy_rule">
+    <sys_data_policy_rule action="INSERT_OR_UPDATE">
+        <disabled>true</disabled>
+        <field>u_event_date</field>
+        <mandatory>ignore</mandatory>
+        <sys_class_name>sys_data_policy_rule</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-01 10:22:43</sys_created_on>
+        <sys_data_policy display_value="Restrict editing of the event_date field to users with the event_admin role.">26065ecd834462101d61f855eeaad3d0</sys_data_policy>
+        <sys_id>89b65241838462101d61f855eeaad3c7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>u_event_date</sys_name>
+        <sys_package display_value="Event Management" source="x_1419495_event">fd08c2b0830022101d61f855eeaad39a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Event Management">fd08c2b0830022101d61f855eeaad39a</sys_scope>
+        <sys_update_name>sys_data_policy_rule_89b65241838462101d61f855eeaad3c7</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-01 10:22:43</sys_updated_on>
+        <table>x_1419495_event_event_record</table>
+    </sys_data_policy_rule>
+</record_update>

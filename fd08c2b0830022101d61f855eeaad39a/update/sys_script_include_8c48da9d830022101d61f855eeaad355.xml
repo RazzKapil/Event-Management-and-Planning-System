@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_1419495_event.TaskUtils</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>TaskUtils</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var TaskUtils = Class.create();
+TaskUtils.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+    getTasksByEventId: function(eventId) {
+        var taskGR = new GlideRecord('x_1419495_event_task');
+        taskGR.addEncodedQuery('event_id=' + eventId);
+        taskGR.query();
+        var tasks = [];
+        while (taskGR.next()) {
+            tasks.push(taskGR.getDisplayValue());
+        }
+        return tasks;
+    },
+
+
+    isTaskOverdue: function(taskId) {
+        var taskGR = new GlideRecord('x_1419495_event_task');
+        if (taskGR.get(taskId)) {
+            var dueDate = taskGR.getValue('due_date');
+            var currentDate = new GlideDateTime();
+            return dueDate && new GlideDateTime(dueDate) < currentDate;
+        } else {
+            gs.error('Task not found: ' + taskId);
+            return null;
+        }
+    },
+
+    getTaskDetailsById: function(taskId) {
+        var taskGR = new GlideRecord('x_1419495_event_task');
+        if (taskGR.get(taskId)) {
+            var result={
+				name:taskGR.u_task_name.toString(),
+				status:taskGR.u_status.toString(),
+				id:taskGR.number.toString()
+			};
+			return result;
+        } else {
+            gs.error('Task not found: ' + taskId);
+            return null;
+        }
+    },
+
+
+    getTasksByDueDate: function(dueDate) {
+        var taskGR = new GlideRecord('x_1419495_event_task');
+        taskGR.addEncodedQuery(dueDate);
+        taskGR.query();
+        var tasks = [];
+        while (taskGR.next()) {
+            tasks.push(taskGR.getDisplayValue());
+        }
+        return tasks;
+    },
+    type: 'TaskUtils'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-02 05:08:23</sys_created_on>
+        <sys_id>8c48da9d830022101d61f855eeaad355</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>TaskUtils</sys_name>
+        <sys_package display_value="Event Management" source="x_1419495_event">fd08c2b0830022101d61f855eeaad39a</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Event Management">fd08c2b0830022101d61f855eeaad39a</sys_scope>
+        <sys_update_name>sys_script_include_8c48da9d830022101d61f855eeaad355</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-02 05:59:18</sys_updated_on>
+    </sys_script_include>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>8c48da9d830022101d61f855eeaad355</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-02 05:08:23</sys_created_on>
+        <sys_id>eb689a91834022101d61f855eeaad38c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-02 05:08:23</sys_updated_on>
+        <table>sys_script_include</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

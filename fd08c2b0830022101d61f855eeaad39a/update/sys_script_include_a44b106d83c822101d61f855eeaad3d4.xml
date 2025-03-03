@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_1419495_event.TaskCancellation</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>TaskCancellation</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var TaskCancellation = Class.create();
+TaskCancellation.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+    cancelTask: function() {
+        var taskSysId = this.getParameter('sysparm_sys_id');
+        if (!taskSysId) {
+            return 'error';
+        }
+
+        var taskRecord = new GlideRecord('x_1419495_event_task');
+        if (taskRecord.get(taskSysId)) {
+            taskRecord.setValue('u_status', 'Cancelled'); // Change state to Cancelled
+            taskRecord.update();
+            if (taskRecord.assigned_to) {
+                gs.eventQueue('x_1419495_event.event_task-cancelled', taskRecord, taskRecord.assigned_to, null);
+            }
+
+            return 'success';
+        }
+
+        return 'error';
+    },
+    type: 'TaskCancellation'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-02 14:46:57</sys_created_on>
+        <sys_id>a44b106d83c822101d61f855eeaad3d4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>TaskCancellation</sys_name>
+        <sys_package display_value="Event Management" source="x_1419495_event">fd08c2b0830022101d61f855eeaad39a</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Event Management">fd08c2b0830022101d61f855eeaad39a</sys_scope>
+        <sys_update_name>sys_script_include_a44b106d83c822101d61f855eeaad3d4</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-02 14:46:57</sys_updated_on>
+    </sys_script_include>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>a44b106d83c822101d61f855eeaad3d4</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-02 14:46:56</sys_created_on>
+        <sys_id>2adc186d83c822101d61f855eeaad332</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-02 14:46:56</sys_updated_on>
+        <table>sys_script_include</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

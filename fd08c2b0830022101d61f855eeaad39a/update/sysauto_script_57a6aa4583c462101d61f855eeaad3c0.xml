@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sysauto_script">
+    <sysauto_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <business_calendar/>
+        <condition/>
+        <conditional>false</conditional>
+        <entered_time>1970-01-01 00:00:00</entered_time>
+        <max_drift/>
+        <name>Reminders to event planners for upcoming tasks</name>
+        <offset/>
+        <offset_type>0</offset_type>
+        <run_as display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</run_as>
+        <run_as_tz/>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek>1</run_dayofweek>
+        <run_period/>
+        <run_start>2025-03-01 11:32:07</run_start>
+        <run_time>1969-12-31 18:30:00</run_time>
+        <run_type>daily</run_type>
+        <script><![CDATA[(function executeScheduledJob() {
+    var reminderDays = 7;
+    var upcomingDate = new GlideDateTime();
+    upcomingDate.addDaysUTC(reminderDays);
+
+    var taskGR = new GlideRecord('x_1419495_event_task');
+    taskGR.addQuery('due_date', '<=', upcomingDate);
+    taskGR.addQuery('u_status', '!=', 'cancelled');
+    taskGR.query();
+
+    var userEmails = {};
+
+    while (taskGR.next()) {
+        var assignedTo = taskGR.getValue('assigned_to');
+        var eventNumber = taskGR.getDisplayValue('event_id');
+
+        if (assignedTo) {
+            if (!userEmails[assignedTo]) {
+                var userGR = new GlideRecord('sys_user');
+                if (userGR.get(assignedTo)) {
+                    userEmails[assignedTo] = userGR.email;
+                }
+            }
+
+            if (userEmails[assignedTo]) {
+                var reminderBody = "Dear " + taskGR.getDisplayValue('assigned_to') + ",\n\n";
+                reminderBody += "You have an upcoming event task due soon:\n\n";
+                reminderBody += "Event: " + eventNumber + "\n";
+                reminderBody += "Task: " + taskGR.getValue('u_task_name') + "\n";
+                reminderBody += "Due Date: " + taskGR.getDisplayValue('due_date') + "\n";
+                reminderBody += "Status: " + taskGR.getDisplayValue('state') + "\n\n";
+                reminderBody += "Please ensure timely completion.\n\nThank you.";
+
+                var email = new GlideRecord('sys_email');
+                email.initialize();
+                email.type = "send-ready";
+                email.recipients = userEmails[assignedTo];
+                email.subject = "Upcoming Event Task Reminder";
+                email.body = reminderBody;
+                email.insert();
+
+                gs.info("Reminder sent successfully to: " + userEmails[assignedTo]);
+            }
+        }
+    }
+})();]]></script>
+        <sys_class_name>sysauto_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-01 11:32:43</sys_created_on>
+        <sys_id>57a6aa4583c462101d61f855eeaad3c0</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>Reminders to event planners for upcoming tasks</sys_name>
+        <sys_package display_value="Event Management" source="x_1419495_event">fd08c2b0830022101d61f855eeaad39a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Event Management">fd08c2b0830022101d61f855eeaad39a</sys_scope>
+        <sys_update_name>sysauto_script_57a6aa4583c462101d61f855eeaad3c0</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-01 11:47:19</sys_updated_on>
+        <time_zone>Asia/Kolkata</time_zone>
+        <upgrade_safe>false</upgrade_safe>
+    </sysauto_script>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>57a6aa4583c462101d61f855eeaad3c0</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-01 11:32:43</sys_created_on>
+        <sys_id>7fc6e28583c462101d61f855eeaad33f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-01 11:32:43</sys_updated_on>
+        <table>sysauto_script</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

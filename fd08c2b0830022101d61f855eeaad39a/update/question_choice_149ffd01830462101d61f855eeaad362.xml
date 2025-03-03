@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="question_choice">
+    <question_choice action="INSERT_OR_UPDATE">
+        <inactive>false</inactive>
+        <order>3</order>
+        <published_ref/>
+        <question display_value="Rating">d49ffd01830462101d61f855eeaad346</question>
+        <sys_class_name>question_choice</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-01 08:41:16</sys_created_on>
+        <sys_id>149ffd01830462101d61f855eeaad362</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Average</sys_name>
+        <sys_package display_value="Event Management" source="x_1419495_event">fd08c2b0830022101d61f855eeaad39a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Event Management">fd08c2b0830022101d61f855eeaad39a</sys_scope>
+        <sys_update_name>question_choice_149ffd01830462101d61f855eeaad362</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-01 08:41:16</sys_updated_on>
+        <text>Average</text>
+        <value>average</value>
+    </question_choice>
+    <fx_price action="delete_multiple" query="id=149ffd01830462101d61f855eeaad362"/>
+</record_update>

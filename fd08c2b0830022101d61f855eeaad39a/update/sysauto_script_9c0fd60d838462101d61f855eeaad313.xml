@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sysauto_script">
+    <sysauto_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <business_calendar/>
+        <condition/>
+        <conditional>false</conditional>
+        <entered_time>1970-01-01 00:00:00</entered_time>
+        <max_drift/>
+        <name>Report of event tasks to event managers</name>
+        <offset/>
+        <offset_type>0</offset_type>
+        <run_as display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</run_as>
+        <run_as_tz/>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek>1</run_dayofweek>
+        <run_period/>
+        <run_start>2025-03-01 10:58:37</run_start>
+        <run_time>1969-12-31 18:30:00</run_time>
+        <run_type>weekly</run_type>
+        <script><![CDATA[(function executeScheduledJob() {
+    var eventTaskGR = new GlideRecord('x_1419495_event_task');
+    eventTaskGR.addQuery('u_status', '!=', 'cancelled');
+    eventTaskGR.orderBy('due_date');
+    eventTaskGR.query();
+
+    if (!eventTaskGR.hasNext()) {
+        gs.info("No event tasks found for the weekly report.");
+        return;
+    }
+
+    var userEmails = {};
+
+    while (eventTaskGR.next()) {
+        var assignedTo = eventTaskGR.getValue('assigned_to');
+        var eventNumber = eventTaskGR.getDisplayValue('event_id');
+
+        if (assignedTo) {
+            if (!userEmails[assignedTo]) {
+                var userGR = new GlideRecord('sys_user');
+                if (userGR.get(assignedTo)) {
+                    userEmails[assignedTo] = userGR.email;
+                }
+            }
+
+            if (userEmails[assignedTo]) {
+                var reportBody = "Dear " + eventTaskGR.getDisplayValue('assigned_to') + ",\n\n";
+                reportBody += "Here is your weekly event task report:\n\n";
+                reportBody += "Event: " + eventNumber + "\n";
+                reportBody += "Task: " + eventTaskGR.getValue('u_task_name') + "\n";
+                reportBody += "Due Date: " + eventTaskGR.getDisplayValue('due_date') + "\n";
+                reportBody += "Status: " + eventTaskGR.getDisplayValue('state') + "\n\n";
+                
+                var email = new GlideRecord('sys_email');
+                email.initialize();
+                email.type = "send-ready";
+                email.recipients = userEmails[assignedTo];
+                email.subject = "Weekly Event Task Report";
+                email.body = reportBody;
+                email.insert();
+
+                gs.info("Weekly Event Task Report sent successfully to: " + userEmails[assignedTo]);
+            }
+        }
+    }
+})();
+]]></script>
+        <sys_class_name>sysauto_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-01 10:58:45</sys_created_on>
+        <sys_id>9c0fd60d838462101d61f855eeaad313</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Report of event tasks to event managers</sys_name>
+        <sys_package display_value="Event Management" source="x_1419495_event">fd08c2b0830022101d61f855eeaad39a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Event Management">fd08c2b0830022101d61f855eeaad39a</sys_scope>
+        <sys_update_name>sysauto_script_9c0fd60d838462101d61f855eeaad313</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-01 11:30:35</sys_updated_on>
+        <time_zone>Asia/Kolkata</time_zone>
+        <upgrade_safe>false</upgrade_safe>
+    </sysauto_script>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>9c0fd60d838462101d61f855eeaad313</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-01 10:58:45</sys_created_on>
+        <sys_id>520f160d838462101d61f855eeaad32e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-01 10:58:45</sys_updated_on>
+        <table>sysauto_script</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

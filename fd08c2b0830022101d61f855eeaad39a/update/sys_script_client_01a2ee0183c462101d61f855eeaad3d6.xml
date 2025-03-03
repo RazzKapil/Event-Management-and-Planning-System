@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field/>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>isVIP</name>
+        <order/>
+        <script><![CDATA[function onLoad() {
+   //Type appropriate comment here, and begin script below
+    var eventId = g_form.getUniqueValue();
+    if (eventId) {
+        var ga = new GlideAjax('FetchEventDetails');
+        ga.addParam('sysparm_name', 'isVIP');
+        ga.addParam('sysparm_eventId', eventId);
+        ga.getXMLAnswer(function(response) {
+            console.log(response+" response");
+            if (response=="true") {
+                alert("Event is vip!");
+            } else {
+                alert('Event is not vip');
+            }
+        });
+    }
+   
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-01 11:17:05</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>01a2ee0183c462101d61f855eeaad3d6</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>isVIP</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Event Management" source="x_1419495_event">fd08c2b0830022101d61f855eeaad39a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Event Management">fd08c2b0830022101d61f855eeaad39a</sys_scope>
+        <sys_update_name>sys_script_client_01a2ee0183c462101d61f855eeaad3d6</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-01 11:19:07</sys_updated_on>
+        <table>x_1419495_event_event_record</table>
+        <type>onLoad</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

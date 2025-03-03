@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field/>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Retrieve Event Details</name>
+        <order/>
+        <script><![CDATA[function onLoad() {
+    var eventId = g_form.getUniqueValue();
+    if (eventId) {
+        var ga = new GlideAjax('FetchEventDetails');
+        ga.addParam('sysparm_name', 'getEventDetails');
+        ga.addParam('sysparm_eventId', eventId);
+        ga.getXMLAnswer(function(response) {
+            var eventDetails = response ? JSON.parse(response) : null;
+			console.log("event Details : " + eventDetails);
+            if (eventDetails) {
+                alert(JSON.stringify(eventDetails));
+            } else {
+                alert('Event details not found.');
+            }
+        });
+    }
+}
+]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-01 10:47:34</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>43aa9e85838462101d61f855eeaad38a</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Retrieve Event Details</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Event Management" source="x_1419495_event">fd08c2b0830022101d61f855eeaad39a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Event Management">fd08c2b0830022101d61f855eeaad39a</sys_scope>
+        <sys_update_name>sys_script_client_43aa9e85838462101d61f855eeaad38a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-01 11:12:09</sys_updated_on>
+        <table>x_1419495_event_event_record</table>
+        <type>onLoad</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

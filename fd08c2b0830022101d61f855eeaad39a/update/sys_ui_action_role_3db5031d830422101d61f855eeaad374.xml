@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_action_role">
+    <sys_ui_action_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_ui_action_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-02 08:42:14</sys_created_on>
+        <sys_id>3db5031d830422101d61f855eeaad374</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>.x_1419495_event.event_planner</sys_name>
+        <sys_package display_value="Event Management" source="x_1419495_event">fd08c2b0830022101d61f855eeaad39a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Event Management">fd08c2b0830022101d61f855eeaad39a</sys_scope>
+        <sys_ui_action display_value="Reschedule">17a5031d830422101d61f855eeaad32d</sys_ui_action>
+        <sys_update_name>sys_ui_action_role_3db5031d830422101d61f855eeaad374</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-02 08:42:14</sys_updated_on>
+        <sys_user_role display_value="x_1419495_event.event_planner" name="x_1419495_event.event_planner">a2cd4630834022101d61f855eeaad369</sys_user_role>
+    </sys_ui_action_role>
+</record_update>

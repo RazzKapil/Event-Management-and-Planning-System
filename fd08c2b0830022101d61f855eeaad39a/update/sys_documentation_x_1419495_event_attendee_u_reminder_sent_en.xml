@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="u_reminder_sent" label="Reminder Sent" language="en" table="x_1419495_event_attendee">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>u_reminder_sent</element>
+            <help/>
+            <hint/>
+            <label>Reminder Sent</label>
+            <language>en</language>
+            <name>x_1419495_event_attendee</name>
+            <plural>Reminder Sents</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-03-02 12:04:37</sys_created_on>
+            <sys_id>78b73b1d830822101d61f855eeaad322</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Reminder Sent</sys_name>
+            <sys_package display_value="Event Management" source="x_1419495_event">fd08c2b0830022101d61f855eeaad39a</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Event Management">fd08c2b0830022101d61f855eeaad39a</sys_scope>
+            <sys_update_name>sys_documentation_x_1419495_event_attendee_u_reminder_sent_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-03-02 12:04:37</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

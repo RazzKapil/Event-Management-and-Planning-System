@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_1419495_event.FeedbackSubmission</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>FeedbackSubmission</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var FeedbackSubmission = Class.create();
+FeedbackSubmission.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+
+    createFeedback: function() {
+        var attendeeId = this.getParameter('sysparm_attendee_id');
+        var eventId = this.getParameter('sysparm_event_id');
+        var rating = this.getParameter('sysparm_rating');
+
+        var validRatings = ["Excellent", "Good", "Average", "Poor"];
+        if (!attendeeId || !eventId || !validRatings.includes(rating)) {
+            return 'error';
+        }
+
+        var feedback = new GlideRecord('x_1419495_event_feedback');
+        feedback.initialize();
+        feedback.setValue('u_attendee_id', attendeeId);
+        feedback.setValue('u_event_id', eventId);
+        feedback.setValue('u_rating', rating);
+        feedback.setValue('u_status', 'Complete');
+        feedback.insert();
+
+        return 'success';
+    }
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-02 15:20:30</sys_created_on>
+        <sys_id>887328a5830c22101d61f855eeaad32e</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>FeedbackSubmission</sys_name>
+        <sys_package display_value="Event Management" source="x_1419495_event">fd08c2b0830022101d61f855eeaad39a</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Event Management">fd08c2b0830022101d61f855eeaad39a</sys_scope>
+        <sys_update_name>sys_script_include_887328a5830c22101d61f855eeaad32e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-02 15:32:20</sys_updated_on>
+    </sys_script_include>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>887328a5830c22101d61f855eeaad32e</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-02 15:20:30</sys_created_on>
+        <sys_id>4684ec65830c22101d61f855eeaad373</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-02 15:20:30</sys_updated_on>
+        <table>sys_script_include</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

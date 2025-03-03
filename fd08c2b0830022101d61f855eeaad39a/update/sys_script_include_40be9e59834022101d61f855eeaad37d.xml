@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_1419495_event.EventUtils</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>EventUtils</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var EventUtils = Class.create();
+EventUtils.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+ getEventDetails: function(eventId) {
+        var eventGR = new GlideRecord('x_1419495_event_event_record');
+	
+        if (eventGR.get(eventId)) {
+             var result = {
+            name: eventGR.u_event_name.toString(),
+            location: eventGR.u_location.toString(),
+            date: eventGR.u_event_date.toString()
+        };
+        return result;
+        } else {
+            gs.error('Event not found: ' + eventId);
+            return null;
+        }
+    },
+    isEventVIP: function(eventId) {
+        var eventGR = this.getEventDetails(eventId);
+        if (eventGR) {
+            return eventGR.getValue('vip') == true;
+        }
+        return false;
+    },
+    calculateRemainingBudget: function(eventId) {
+        var remaining;
+        var budgetGR = new GlideRecord("x_1419495_event_budget");
+        budgetGR.addEncodedQuery("event_id="+eventId);
+        budgetGR.query();
+        while (budgetGR.next()) {
+            remaining = parseFloat(budgetGR.getValue("amount_remaining"));
+        }
+        return remaining;
+    },
+    getEventTasks: function(eventId) {
+        return this._getRelatedRecords('x_1419495_event_task', 'event_id', eventId);
+    },
+    getEventAttendees: function(eventId) {
+        return this._getRelatedRecords('x_1419495_event_attendee', 'event_id', eventId);
+    },
+    getEventVendors: function(eventId) {
+        return this._getRelatedRecords('x_1419495_event_vendor', 'event_id', eventId);
+    },
+    getEventBudgetDetails: function(eventId) {
+        return this._getRelatedRecords('x_1419495_event_budget', 'event_id', eventId);
+    },
+    getEventFeedback: function(eventId) {
+        return this._getRelatedRecords('x_1419495_event_feedback', 'u_event_id', eventId);
+    },
+
+    _getRelatedRecords: function(tableName, referenceField, eventId) {
+        var relatedGR = new GlideRecord(tableName);
+        relatedGR.addEncodedQuery(referenceField+"="+eventId);
+        relatedGR.query();
+        var results = [];
+        while (relatedGR.next()) {
+            results.push(relatedGR.getDisplayValue());
+        }
+        return results;
+    },
+    type: 'EventUtils'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-02 05:36:25</sys_created_on>
+        <sys_id>40be9e59834022101d61f855eeaad37d</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>EventUtils</sys_name>
+        <sys_package display_value="Event Management" source="x_1419495_event">fd08c2b0830022101d61f855eeaad39a</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Event Management">fd08c2b0830022101d61f855eeaad39a</sys_scope>
+        <sys_update_name>sys_script_include_40be9e59834022101d61f855eeaad37d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-02 06:15:11</sys_updated_on>
+    </sys_script_include>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>40be9e59834022101d61f855eeaad37d</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-02 05:36:25</sys_created_on>
+        <sys_id>d2ded299834022101d61f855eeaad357</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-02 05:36:25</sys_updated_on>
+        <table>sys_script_include</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

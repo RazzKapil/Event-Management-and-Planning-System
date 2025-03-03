@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_form_sections form_id="6efa47b0838422101d61f855eeaad304" sys_domain="global" table="x_1419495_event_feedback" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-02-28 19:32:16</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>32fa47b0838422101d61f855eeaad308</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_1419495_event_feedback" name="x_1419495_event_feedback" sys_domain="global" view="d44b72f8830422101d61f855eeaad331">6efa47b0838422101d61f855eeaad304</sys_ui_form>
+            <sys_ui_section caption="Feedback Details" display_value="Feedback Details" name="x_1419495_event_feedback" sys_domain="global" view="d44b72f8830422101d61f855eeaad331">a2fa47b0838422101d61f855eeaad303</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-02-28 19:32:16</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-02-28 19:32:16</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>fafa47b0838422101d61f855eeaad308</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_1419495_event_feedback" name="x_1419495_event_feedback" sys_domain="global" view="d44b72f8830422101d61f855eeaad331">6efa47b0838422101d61f855eeaad304</sys_ui_form>
+            <sys_ui_section caption="Activity / Notes" display_value="Activity / Notes" name="x_1419495_event_feedback" sys_domain="global" view="d44b72f8830422101d61f855eeaad331">62fa47b0838422101d61f855eeaad304</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-02-28 19:32:16</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>x_1419495_event_feedback</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-02-28 19:32:15</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>6efa47b0838422101d61f855eeaad304</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_1419495_event_feedback</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Event Management" source="x_1419495_event">fd08c2b0830022101d61f855eeaad39a</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Event Management">fd08c2b0830022101d61f855eeaad39a</sys_scope>
+            <sys_update_name>sys_ui_form_sections_6efa47b0838422101d61f855eeaad304</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-02-28 19:32:15</sys_updated_on>
+            <sys_user/>
+            <view display_value="Manager View" name="Manager_View">d44b72f8830422101d61f855eeaad331</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>

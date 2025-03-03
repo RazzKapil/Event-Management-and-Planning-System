@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action">
+    <sys_ui_policy_action action="INSERT_OR_UPDATE">
+        <cleared>false</cleared>
+        <disabled>ignore</disabled>
+        <field>end_time</field>
+        <field_message/>
+        <field_message_type>none</field_message_type>
+        <mandatory>true</mandatory>
+        <sys_class_name>sys_ui_policy_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-01 07:29:26</sys_created_on>
+        <sys_id>881f25c5838062101d61f855eeaad339</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>end_time</sys_name>
+        <sys_package display_value="Event Management" source="x_1419495_event">fd08c2b0830022101d61f855eeaad39a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Event Management">fd08c2b0830022101d61f855eeaad39a</sys_scope>
+        <sys_update_name>sys_ui_policy_action_881f25c5838062101d61f855eeaad339</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-01 07:29:26</sys_updated_on>
+        <table>x_1419495_event_schedule</table>
+        <ui_policy display_value="make the end_time field mandatory when activity_name is filled">8eee21c5838062101d61f855eeaad3ba</ui_policy>
+        <value/>
+        <value_action>ignore</value_action>
+        <visible>ignore</visible>
+    </sys_ui_policy_action>
+    <sys_translated_text action="delete_multiple" query="documentkey=881f25c5838062101d61f855eeaad339"/>
+</record_update>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_operation">
+    <sys_ws_operation action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <consumes>application/json,application/xml,text/xml</consumes>
+        <consumes_customized>false</consumes_customized>
+        <default_operation_uri/>
+        <enforce_acl>cf9d01d3e73003009d6247e603f6a990</enforce_acl>
+        <http_method>POST</http_method>
+        <name>Create Task</name>
+        <operation_script><![CDATA[(function process(/*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
+    try {
+        // Parse request body
+        var body = request.body.data;
+        var eventId = body.event_id; // This will be the custom event ID, not sys_id
+        var taskName = body.u_task_name;
+        var assignedTo = body.assigned_to;
+        var dueDate = body.due_date;
+
+        // Validate required fields
+        if (!eventId || !taskName || !assignedTo || !dueDate) {
+            response.setStatus(400);
+            return response.setBody({ error: "Missing required fields." });
+        }
+
+        // Lookup event sys_id using the provided event_id
+        var eventGR = new GlideRecord('x_1419495_event_event_record'); // Replace with actual Event table name
+        eventGR.addQuery('number', eventId); // event_id is the unique identifier for events
+        eventGR.query();
+
+        if (!eventGR.next()) {
+            response.setStatus(404);
+            return response.setBody({ error: "Event not found." });
+        }
+
+        var eventSysId = eventGR.sys_id;
+
+        // Create a new task record in ServiceNow
+        var taskGR = new GlideRecord('x_1419495_event_task'); // Replace with actual Task table name
+        taskGR.initialize();
+        taskGR.event_id = eventSysId; // Store the sys_id reference
+        taskGR.u_task_name = taskName;
+        taskGR.assigned_to = assignedTo;
+        taskGR.due_date = dueDate;
+        taskGR.insert();
+
+        // Success response
+        response.setStatus(201);
+        return response.setBody({
+            message: "Task created successfully.",
+            task_id: taskGR.sys_id
+        });
+
+    } catch (error) {
+        response.setStatus(500);
+        return response.setBody({ error: error.message });
+    }
+})(request, response);
+]]></operation_script>
+        <operation_uri>/api/x_1419495_event/task_management_api/create-task</operation_uri>
+        <produces>application/json,application/xml,text/xml</produces>
+        <produces_customized>false</produces_customized>
+        <relative_path>/create-task</relative_path>
+        <request_example/>
+        <requires_acl_authorization>true</requires_acl_authorization>
+        <requires_authentication>true</requires_authentication>
+        <requires_snc_internal_role>true</requires_snc_internal_role>
+        <short_description/>
+        <sys_class_name>sys_ws_operation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-01 16:49:52</sys_created_on>
+        <sys_id>1c8def81830c62101d61f855eeaad385</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Create Task</sys_name>
+        <sys_package display_value="Event Management" source="x_1419495_event">fd08c2b0830022101d61f855eeaad39a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Event Management">fd08c2b0830022101d61f855eeaad39a</sys_scope>
+        <sys_update_name>sys_ws_operation_1c8def81830c62101d61f855eeaad385</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-01 16:49:52</sys_updated_on>
+        <web_service_definition display_value="Task Management API">1afca705830c62101d61f855eeaad3ab</web_service_definition>
+        <web_service_version/>
+    </sys_ws_operation>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>1c8def81830c62101d61f855eeaad385</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-01 16:49:51</sys_created_on>
+        <sys_id>596f670d830c62101d61f855eeaad3b5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-01 16:49:51</sys_updated_on>
+        <table>sys_ws_operation</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

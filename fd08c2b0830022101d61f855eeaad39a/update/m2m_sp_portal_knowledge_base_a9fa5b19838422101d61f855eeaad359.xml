@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_portal_knowledge_base">
+    <m2m_sp_portal_knowledge_base action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <kb_knowledge_base display_value="Known Error">c0a54bac871023000e3dd61e36cb0bcb</kb_knowledge_base>
+        <order>100</order>
+        <sp_portal display_value="Event Management and Planning System">f3aeb291830422101d61f855eeaad3ec</sp_portal>
+        <sys_class_name>m2m_sp_portal_knowledge_base</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-02 09:59:03</sys_created_on>
+        <sys_id>a9fa5b19838422101d61f855eeaad359</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Known Error.Event Management and Planning System</sys_name>
+        <sys_package display_value="Event Management" source="x_1419495_event">fd08c2b0830022101d61f855eeaad39a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Event Management">fd08c2b0830022101d61f855eeaad39a</sys_scope>
+        <sys_update_name>m2m_sp_portal_knowledge_base_a9fa5b19838422101d61f855eeaad359</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-02 09:59:03</sys_updated_on>
+    </m2m_sp_portal_knowledge_base>
+</record_update>

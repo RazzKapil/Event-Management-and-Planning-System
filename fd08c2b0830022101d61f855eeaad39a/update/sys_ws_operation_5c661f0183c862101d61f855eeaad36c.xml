@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_operation">
+    <sys_ws_operation action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <consumes>application/json,application/xml,text/xml</consumes>
+        <consumes_customized>false</consumes_customized>
+        <default_operation_uri/>
+        <enforce_acl>cf9d01d3e73003009d6247e603f6a990</enforce_acl>
+        <http_method>POST</http_method>
+        <name>Create Event</name>
+        <operation_script><![CDATA[(function process(/*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
+    try {
+        // Parse request body
+        var body = request.body.data;
+        var eventName = body.u_event_name;
+        var eventDate = body.u_event_date;
+        var location = body.u_location;
+        var contactPerson = body.u_contact_person;
+		var contactNumber = body.contact_number;
+
+        // Validate required fields
+        if (!eventName || !eventDate || !location || !contactPerson || !contactNumber) {
+            response.setStatus(400);
+            return response.setBody({ error: "Missing required fields." });
+        }
+
+        // Create a new event record in ServiceNow
+        var eventGR = new GlideRecord('x_1419495_event_event_record'); // Replace with actual table name
+		gs.info('Inserting into table: ' + eventGR.getTableName());
+        eventGR.initialize();
+        eventGR.u_event_name = eventName;
+        eventGR.u_event_date = eventDate;
+        eventGR.u_location = location;
+        eventGR.u_contact_person = contactPerson;
+		eventGR.contact_number = contactNumber;
+        var sysID = eventGR.insert();
+		gs.info('Inserted Event Record ID: ' + sysID);
+		gs.info(eventName+" "+eventDate+" "+location+" "+contactPerson+" "+contactNumber);
+
+        // Success response
+        response.setStatus(201);
+        return response.setBody({
+            message: "Event created successfully.",
+            event_id: eventGR.sys_id
+        });
+
+    } catch (error) {
+        response.setStatus(500);
+        return response.setBody({ error: error.message });
+    }
+})(request, response);]]></operation_script>
+        <operation_uri>/api/x_1419495_event/create_event_records/create-event</operation_uri>
+        <produces>application/json,application/xml,text/xml</produces>
+        <produces_customized>false</produces_customized>
+        <relative_path>/create-event</relative_path>
+        <request_example/>
+        <requires_acl_authorization>true</requires_acl_authorization>
+        <requires_authentication>true</requires_authentication>
+        <requires_snc_internal_role>true</requires_snc_internal_role>
+        <short_description/>
+        <sys_class_name>sys_ws_operation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-01 15:02:46</sys_created_on>
+        <sys_id>5c661f0183c862101d61f855eeaad36c</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Create Event</sys_name>
+        <sys_package display_value="Event Management" source="x_1419495_event">fd08c2b0830022101d61f855eeaad39a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Event Management">fd08c2b0830022101d61f855eeaad39a</sys_scope>
+        <sys_update_name>sys_ws_operation_5c661f0183c862101d61f855eeaad36c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-01 15:33:08</sys_updated_on>
+        <web_service_definition display_value="Create Event Records">eb26974183c862101d61f855eeaad3bb</web_service_definition>
+        <web_service_version/>
+    </sys_ws_operation>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>5c661f0183c862101d61f855eeaad36c</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-01 15:02:45</sys_created_on>
+        <sys_id>60e6db4183c862101d61f855eeaad3eb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-01 15:02:45</sys_updated_on>
+        <table>sys_ws_operation</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>
