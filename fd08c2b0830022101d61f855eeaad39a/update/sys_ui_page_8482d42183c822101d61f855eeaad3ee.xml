@@ -23,36 +23,70 @@
 fetchEvents();]]></client_script>
         <description/>
         <direct>false</direct>
-        <endpoint>x_1419495_event_.do</endpoint>
+        <endpoint>x_1419495_event_eventdetails.do</endpoint>
         <html><![CDATA[<html>
+
 <head>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
     <style>
-        body { font-family: Arial, sans-serif; margin: 20px; }
-        h2 { color: #007bff; }
-        table { width: 100%; border-collapse: collapse; margin-top: 10px; }
-        th, td { padding: 10px; border: 1px solid #ddd; text-align: left; }
-        th { background-color: #007bff; color: white; }
-        .loading { font-size: 16px; color: gray; }
-        .section { margin-bottom: 20px; }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h2 {
+            color: #007bff;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        th,
+        td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+
+        th {
+            background-color: #007bff;
+            color: white;
+        }
+
+        .loading {
+            font-size: 16px;
+            color: gray;
+        }
+
+        .section {
+            margin-bottom: 20px;
+        }
     </style>
 </head>
+
 <body ng-app="eventApp" ng-controller="EventController">
- 
+
     <h2>Event Details</h2>
     <p class="loading" ng-if="loading">Loading event details...</p>
- 
+
     <div ng-if="event">
-        <p><strong>Name:</strong> {{ event.name }}</p>
-        <p><strong>Date:</strong> {{ event.date }}</p>
-        <p><strong>Location:</strong> {{ event.location }}</p>
-        <p><strong>Status:</strong> {{ event.status }}</p>
+        <p><strong>Name:</strong> {{ u_event_name }}</p>
+        <p><strong>Date:</strong> {{ u_event_date }}</p>
+        <p><strong>Location:</strong> {{ u_location }}</p>
+        <p><strong>Status:</strong> {{ u_status }}</p>
     </div>
- 
+
     <div class="section" ng-if="tasks.length > 0">
         <h3>Tasks</h3>
         <table>
-            <tr><th>Task</th><th>Assigned To</th><th>Status</th></tr>
+            <tr>
+                <th>Task</th>
+                <th>Assigned To</th>
+                <th>Status</th>
+            </tr>
             <tr ng-repeat="task in tasks">
                 <td>{{ task.name }}</td>
                 <td>{{ task.assigned_to }}</td>
@@ -60,11 +94,15 @@ fetchEvents();]]></client_script>
             </tr>
         </table>
     </div>
- 
+
     <div class="section" ng-if="attendees.length > 0">
         <h3>Attendees</h3>
         <table>
-            <tr><th>Name</th><th>Email</th><th>Contact</th></tr>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Contact</th>
+            </tr>
             <tr ng-repeat="attendee in attendees">
                 <td>{{ attendee.name }}</td>
                 <td>{{ attendee.email }}</td>
@@ -72,40 +110,50 @@ fetchEvents();]]></client_script>
             </tr>
         </table>
     </div>
- 
+
     <div class="section" ng-if="vendors.length > 0">
         <h3>Vendors</h3>
         <table>
-            <tr><th>Vendor</th><th>Service</th></tr>
+            <tr>
+                <th>Vendor</th>
+                <th>Service</th>
+            </tr>
             <tr ng-repeat="vendor in vendors">
                 <td>{{ vendor.name }}</td>
                 <td>{{ vendor.service }}</td>
             </tr>
         </table>
     </div>
- 
+
     <div class="section" ng-if="budget">
         <h3>Budget</h3>
         <p><strong>Total Amount:</strong> {{ budget.total }}</p>
         <p><strong>Amount Spent:</strong> {{ budget.spent }}</p>
         <p><strong>Remaining Amount:</strong> {{ budget.remaining }}</p>
     </div>
- 
+
     <div class="section" ng-if="schedule.length > 0">
         <h3>Schedule</h3>
         <table>
-            <tr><th>Activity</th><th>Time</th></tr>
+            <tr>
+                <th>Activity</th>
+                <th>Time</th>
+            </tr>
             <tr ng-repeat="item in schedule">
                 <td>{{ item.activity }}</td>
                 <td>{{ item.time }}</td>
             </tr>
         </table>
     </div>
- 
+
     <div class="section" ng-if="feedback.length > 0">
         <h3>Feedback</h3>
         <table>
-            <tr><th>User</th><th>Rating</th><th>Comments</th></tr>
+            <tr>
+                <th>User</th>
+                <th>Rating</th>
+                <th>Comments</th>
+            </tr>
             <tr ng-repeat="fb in feedback">
                 <td>{{ fb.user }}</td>
                 <td>{{ fb.rating }}</td>
@@ -113,12 +161,12 @@ fetchEvents();]]></client_script>
             </tr>
         </table>
     </div>
- 
+
     <p ng-if="!loading &amp;&amp; !event">Event not found.</p>
- 
+
     <script>
         var app = angular.module('eventApp', []);
- 
+
         app.controller('EventController', function($scope) {
             $scope.loading = true;
             $scope.event = null;
@@ -128,13 +176,13 @@ fetchEvents();]]></client_script>
             $scope.budget = null;
             $scope.schedule = [];
             $scope.feedback = [];
- 
-            var eventId = '13822f898340e2109befcc65eeaad37c'; // Replace with dynamic event ID
- 
-            var ga = new GlideAjax('EventScriptIncludeUI');
+
+            var eventId = '931aa8f58300a2101d61f855eeaad3fa'; // Replace with dynamic event ID
+
+            var ga = new GlideAjax('EventDetailsUtils');
             ga.addParam('sysparm_name', 'getEventDetails');
             ga.addParam('sysparm_event_id', eventId);
- 
+
             ga.getXMLAnswer(function(response) {
                 $scope.$apply(function() {
                     var data = JSON.parse(response);
@@ -150,23 +198,24 @@ fetchEvents();]]></client_script>
             });
         });
     </script>
- 
+
 </body>
+
 </html>]]></html>
-        <name/>
+        <name>eventdetails</name>
         <processing_script/>
         <sys_class_name>sys_ui_page</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-03-02 14:09:20</sys_created_on>
         <sys_id>8482d42183c822101d61f855eeaad3ee</sys_id>
-        <sys_mod_count>3</sys_mod_count>
-        <sys_name/>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>eventdetails</sys_name>
         <sys_package display_value="Event Management" source="x_1419495_event">fd08c2b0830022101d61f855eeaad39a</sys_package>
         <sys_policy/>
         <sys_scope display_value="Event Management">fd08c2b0830022101d61f855eeaad39a</sys_scope>
         <sys_update_name>sys_ui_page_8482d42183c822101d61f855eeaad3ee</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-03-03 10:17:51</sys_updated_on>
+        <sys_updated_on>2025-03-03 14:16:34</sys_updated_on>
     </sys_ui_page>
     <sys_es_latest_script action="INSERT_OR_UPDATE">
         <id>8482d42183c822101d61f855eeaad3ee</id>

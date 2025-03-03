@@ -2,47 +2,126 @@
     <sys_script_include action="INSERT_OR_UPDATE">
         <access>package_private</access>
         <active>false</active>
-        <api_name>x_1419495_event.EventScriptIncludeUI</api_name>
+        <api_name>x_1419495_event.EventDetailsUtils</api_name>
         <caller_access/>
         <client_callable>true</client_callable>
         <description/>
         <mobile_callable>false</mobile_callable>
-        <name>EventScriptIncludeUI</name>
+        <name>EventDetailsUtils</name>
         <sandbox_callable>false</sandbox_callable>
-        <script><![CDATA[var EventScriptIncludeUI = Class.create();
-EventScriptIncludeUI.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
-    getUpcomingEvents: function() {
-        var events = [];
-        var gr = new GlideRecord('x_1419495_event_event_record');
-        var today = new GlideDateTime();
-        gr.addQuery('u_event_date', '>=', today);
-        gr.orderBy('u_event_date');
-        gr.query();
+        <script><![CDATA[var EventDetailsUtils = Class.create();
+EventDetailsUtils.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
 
-        while (gr.next()) {
-            events.push({
-                name: gr.getValue('u_event_name'),
-                date: gr.getValue('u_event_date'),
-                location: gr.getValue('u_location')
+    getEventDetails: function() {
+        var eventId = this.getParameter('sysparm_event_id');
+        var result = {
+            event: {},
+            tasks: [],
+            attendees: [],
+            vendors: [],
+            budget: {},
+            schedule: [],
+            feedback: []
+        };
+
+        // Fetch Event Details
+        var eventGR = new GlideRecord('x_1419495_event_event_record');
+        eventGR.addQuery('sys_id', eventId);
+        eventGR.query();
+        while (eventGR.next()) {
+            result.event = {
+                name: eventGR.getValue('u_event_name'),
+                date: eventGR.getValue('u_event_date'),
+                location: eventGR.getDisplayValue('u_location'),
+                status: eventGR.getValue('u_status')
+            };
+        }
+
+        // Fetch Related Tasks
+        var taskGR = new GlideRecord('x_1419495_event_task');
+        taskGR.addQuery('u_event_id', eventId);
+        taskGR.query();
+        while (taskGR.next()) {
+            result.tasks.push({
+                name: taskGR.getValue('u_task_name'),
+                assigned_to: taskGR.getDisplayValue('assigned_to'),
+                status: taskGR.getValue('u_status')
             });
         }
 
-        return JSON.stringify(events);
+        // Fetch Attendees
+        var attGR = new GlideRecord('x_1419495_event_attendee');
+        attGR.addQuery('event_id', eventId);
+        attGR.query();
+        while (attGR.next()) {
+            result.attendees.push({
+                name: attGR.getValue('first_name'),
+                email: attGR.getValue('email'),
+                contact: attGR.getValue('contact_number')
+            });
+        }
+
+        // Fetch Vendors
+        var vendorGR = new GlideRecord('x_1419495_event_vendor');
+        vendorGR.addQuery('event_id', eventId);
+        vendorGR.query();
+        while (vendorGR.next()) {
+            result.vendors.push({
+                name: vendorGR.getValue('x_vendor_name'),
+                service: vendorGR.getValue('u_service_provided')
+            });
+        }
+
+        // Fetch Budget
+        var budgetGR = new GlideRecord('x_1419495_event_budget');
+        if (budgetGR.get('event_id', eventId)) {
+            result.budget = {
+                total: budgetGR.getValue('total_budget'),
+                spent: budgetGR.getValue('amount_spent'),
+                remaining: budgetGR.getValue('amount_remaining')
+            };
+        }
+
+        // Fetch Schedule
+        var scheduleGR = new GlideRecord('x_1419495_event_schedule');
+        scheduleGR.addQuery('event_id', eventId);
+        scheduleGR.query();
+        while (scheduleGR.next()) {
+            result.schedule.push({
+                activity: scheduleGR.getValue('activity_name'),
+                time: scheduleGR.getValue('start_time')
+            });
+        }
+
+        // Fetch Feedback
+        var feedbackGR = new GlideRecord('x_1419495_event_feedback');
+        feedbackGR.addQuery('u_event_id', eventId);
+        feedbackGR.query();
+        while (feedbackGR.next()) {
+            result.feedback.push({
+                user: feedbackGR.attendee_id.first_name.toString(),
+                rating: feedbackGR.getValue('u_rating'),
+                comment: feedbackGR.getValue('u_comment')
+            });
+        }
+
+        return JSON.stringify(result);
     },
-    type: 'EventScriptIncludeUI'
+
+    type: 'EventDetailsUtils'
 });]]></script>
         <sys_class_name>sys_script_include</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-03-02 14:09:09</sys_created_on>
         <sys_id>2d33186183c822101d61f855eeaad3bb</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_name>EventScriptIncludeUI</sys_name>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>EventDetailsUtils</sys_name>
         <sys_package display_value="Event Management" source="x_1419495_event">fd08c2b0830022101d61f855eeaad39a</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Event Management">fd08c2b0830022101d61f855eeaad39a</sys_scope>
         <sys_update_name>sys_script_include_2d33186183c822101d61f855eeaad3bb</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-03-02 14:13:04</sys_updated_on>
+        <sys_updated_on>2025-03-03 14:14:33</sys_updated_on>
     </sys_script_include>
     <sys_es_latest_script action="INSERT_OR_UPDATE">
         <id>2d33186183c822101d61f855eeaad3bb</id>
