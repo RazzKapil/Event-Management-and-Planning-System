@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section action="DELETE" caption="Attendee Information" section_id="a85d32bc830422101d61f855eeaad3cb" sys_domain="global" table="x_1419495_event_attendee" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>number</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-03-02 12:04:38</sys_created_on>
+            <sys_id>4db73b1d830822101d61f855eeaad353</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Attendee Information" display_value="Attendee Information" name="x_1419495_event_attendee" sys_domain="global" view="Default view">a85d32bc830422101d61f855eeaad3cb</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-03-02 12:04:38</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>event_id</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-03-02 12:04:38</sys_created_on>
+            <sys_id>89b73b1d830822101d61f855eeaad354</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Attendee Information" display_value="Attendee Information" name="x_1419495_event_attendee" sys_domain="global" view="Default view">a85d32bc830422101d61f855eeaad3cb</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-03-02 12:04:38</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>first_name</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-03-02 12:04:38</sys_created_on>
+            <sys_id>81b73b1d830822101d61f855eeaad355</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Attendee Information" display_value="Attendee Information" name="x_1419495_event_attendee" sys_domain="global" view="Default view">a85d32bc830422101d61f855eeaad3cb</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-03-02 12:04:38</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>last_name</element>
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-03-02 12:04:38</sys_created_on>
+            <sys_id>89b73b1d830822101d61f855eeaad355</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Attendee Information" display_value="Attendee Information" name="x_1419495_event_attendee" sys_domain="global" view="Default view">a85d32bc830422101d61f855eeaad3cb</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-03-02 12:04:38</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>email</element>
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-03-02 12:04:38</sys_created_on>
+            <sys_id>81b73b1d830822101d61f855eeaad356</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Attendee Information" display_value="Attendee Information" name="x_1419495_event_attendee" sys_domain="global" view="Default view">a85d32bc830422101d61f855eeaad3cb</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-03-02 12:04:38</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>contact_number</element>
+            <position>5</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-03-02 12:04:38</sys_created_on>
+            <sys_id>89b73b1d830822101d61f855eeaad356</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Attendee Information" display_value="Attendee Information" name="x_1419495_event_attendee" sys_domain="global" view="Default view">a85d32bc830422101d61f855eeaad3cb</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-03-02 12:04:38</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_status</element>
+            <position>6</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-03-02 12:04:38</sys_created_on>
+            <sys_id>81b73b1d830822101d61f855eeaad357</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Attendee Information" display_value="Attendee Information" name="x_1419495_event_attendee" sys_domain="global" view="Default view">a85d32bc830422101d61f855eeaad3cb</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-03-02 12:04:38</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>check_in</element>
+            <position>7</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-03-02 12:04:38</sys_created_on>
+            <sys_id>89b73b1d830822101d61f855eeaad357</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Attendee Information" display_value="Attendee Information" name="x_1419495_event_attendee" sys_domain="global" view="Default view">a85d32bc830422101d61f855eeaad3cb</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-03-02 12:04:38</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_reminder_sent</element>
+            <position>8</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-03-02 12:04:38</sys_created_on>
+            <sys_id>81b73b1d830822101d61f855eeaad358</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Attendee Information" display_value="Attendee Information" name="x_1419495_event_attendee" sys_domain="global" view="Default view">a85d32bc830422101d61f855eeaad3cb</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-03-02 12:04:38</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="DELETE">
+            <caption>Attendee Information</caption>
+            <header>false</header>
+            <name>x_1419495_event_attendee</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-02-28 18:32:35</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a85d32bc830422101d61f855eeaad3cb</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_name>x_1419495_event_attendee</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Event Management" source="x_1419495_event">fd08c2b0830022101d61f855eeaad39a</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Event Management">fd08c2b0830022101d61f855eeaad39a</sys_scope>
+            <sys_update_name>sys_ui_section_a85d32bc830422101d61f855eeaad3cb</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-02-28 18:42:25</sys_updated_on>
+            <sys_user/>
+            <title>true</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Event Management">fd08c2b0830022101d61f855eeaad39a</application>
+        <file_path/>
+        <instance_id>327bf095db4dc69037d72a591396198e</instance_id>
+        <instance_name>dev244205</instance_name>
+        <name>sys_ui_section_a85d32bc830422101d61f855eeaad3cb</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_section caption="Attendee Information" section_id="a85d32bc830422101d61f855eeaad3cb" sys_domain="global" table="x_1419495_event_attendee" version="3" view=""><sys_ui_element action="INSERT_OR_UPDATE"><element>number</element><position>0</position><sys_created_by>admin</sys_created_by><sys_created_on>2025-03-02 12:04:38</sys_created_on><sys_id>4db73b1d830822101d61f855eeaad353</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Attendee Information" display_value="Attendee Information" name="x_1419495_event_attendee" sys_domain="global" view="Default view">a85d32bc830422101d61f855eeaad3cb</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-03-02 12:04:38</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>event_id</element><position>1</position><sys_created_by>admin</sys_created_by><sys_created_on>2025-03-02 12:04:38</sys_created_on><sys_id>89b73b1d830822101d61f855eeaad354</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Attendee Information" display_value="Attendee Information" name="x_1419495_event_attendee" sys_domain="global" view="Default view">a85d32bc830422101d61f855eeaad3cb</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-03-02 12:04:38</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>first_name</element><position>2</position><sys_created_by>admin</sys_created_by><sys_created_on>2025-03-02 12:04:38</sys_created_on><sys_id>81b73b1d830822101d61f855eeaad355</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Attendee Information" display_value="Attendee Information" name="x_1419495_event_attendee" sys_domain="global" view="Default view">a85d32bc830422101d61f855eeaad3cb</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-03-02 12:04:38</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>last_name</element><position>3</position><sys_created_by>admin</sys_created_by><sys_created_on>2025-03-02 12:04:38</sys_created_on><sys_id>89b73b1d830822101d61f855eeaad355</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Attendee Information" display_value="Attendee Information" name="x_1419495_event_attendee" sys_domain="global" view="Default view">a85d32bc830422101d61f855eeaad3cb</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-03-02 12:04:38</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>email</element><position>4</position><sys_created_by>admin</sys_created_by><sys_created_on>2025-03-02 12:04:38</sys_created_on><sys_id>81b73b1d830822101d61f855eeaad356</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Attendee Information" display_value="Attendee Information" name="x_1419495_event_attendee" sys_domain="global" view="Default view">a85d32bc830422101d61f855eeaad3cb</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-03-02 12:04:38</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>contact_number</element><position>5</position><sys_created_by>admin</sys_created_by><sys_created_on>2025-03-02 12:04:38</sys_created_on><sys_id>89b73b1d830822101d61f855eeaad356</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Attendee Information" display_value="Attendee Information" name="x_1419495_event_attendee" sys_domain="global" view="Default view">a85d32bc830422101d61f855eeaad3cb</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-03-02 12:04:38</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>u_status</element><position>6</position><sys_created_by>admin</sys_created_by><sys_created_on>2025-03-02 12:04:38</sys_created_on><sys_id>81b73b1d830822101d61f855eeaad357</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Attendee Information" display_value="Attendee Information" name="x_1419495_event_attendee" sys_domain="global" view="Default view">a85d32bc830422101d61f855eeaad3cb</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-03-02 12:04:38</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>check_in</element><position>7</position><sys_created_by>admin</sys_created_by><sys_created_on>2025-03-02 12:04:38</sys_created_on><sys_id>89b73b1d830822101d61f855eeaad357</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Attendee Information" display_value="Attendee Information" name="x_1419495_event_attendee" sys_domain="global" view="Default view">a85d32bc830422101d61f855eeaad3cb</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-03-02 12:04:38</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>u_reminder_sent</element><position>8</position><sys_created_by>admin</sys_created_by><sys_created_on>2025-03-02 12:04:38</sys_created_on><sys_id>81b73b1d830822101d61f855eeaad358</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Attendee Information" display_value="Attendee Information" name="x_1419495_event_attendee" sys_domain="global" view="Default view">a85d32bc830422101d61f855eeaad3cb</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-03-02 12:04:38</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_section action="INSERT_OR_UPDATE"><caption>Attendee Information</caption><header>false</header><name>x_1419495_event_attendee</name><roles/><sys_class_name>sys_ui_section</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-02-28 18:32:35</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>a85d32bc830422101d61f855eeaad3cb</sys_id><sys_mod_count>1</sys_mod_count><sys_name>x_1419495_event_attendee</sys_name><sys_overrides/><sys_package display_value="Event Management" source="x_1419495_event">fd08c2b0830022101d61f855eeaad39a</sys_package><sys_policy/><sys_scope display_value="Event Management">fd08c2b0830022101d61f855eeaad39a</sys_scope><sys_update_name>sys_ui_section_a85d32bc830422101d61f855eeaad3cb</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-02-28 18:42:25</sys_updated_on><sys_user/><title>true</title><view display_value="Default view" name="NULL">Default view</view><view_name/></sys_ui_section></sys_ui_section></record_update>]]></payload>
+        <payload_hash>-1983340719</payload_hash>
+        <record_name>Attendee</record_name>
+        <reverted_from/>
+        <source>a2f8667083c022101d61f855eeaad3bb</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-02 12:04:38</sys_created_on>
+        <sys_id>0db73b1d830822101d61f855eeaad35a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19556be78c80000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-02 12:04:38</sys_updated_on>
+        <type>Form Layout</type>
+        <update_guid>c1b73b1da30822100fcf3922eb677e5a</update_guid>
+        <update_guid_history>c1b73b1da30822100fcf3922eb677e5a:-1983340719,06e36715a9c422103ed6d5ec7d7a7524:-564910033,dc901b9963442210010bb82198904a86:-574352841,389f32b073442210b7fbf4477c5ca574:168025792,e49f32b0a44422100d5f55f2e61b405d:-1733032583,f88ef230df4422104bca55e784264ce9:1668564976,788ef230d744221081dc9f69236bd5d1:-2060991045,f48ef2307c4422107a84f342f68a50b9:-1987848467,688ef230bf4422108892eccc316f0a7a:-1455595018,688ef23061442210ade072f037708b6c:1004067654</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-03 16:06:49</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_section">sys_ui_section</sys_db_object>
+        <sys_id>006599b4ba8e4b7480b62337b80102e1</sys_id>
+        <sys_metadata>a85d32bc830422101d61f855eeaad3cb</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Attendee Information</sys_name>
+        <sys_package display_value="Event Management" source="x_1419495_event">fd08c2b0830022101d61f855eeaad39a</sys_package>
+        <sys_parent display_value="Attendee">9edcf27c830422101d61f855eeaad3d9</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Event Management">fd08c2b0830022101d61f855eeaad39a</sys_scope>
+        <sys_scope_delete display_value="">909d60b3437b482594cc4c5e818e53c1</sys_scope_delete>
+        <sys_update_name>sys_ui_section_a85d32bc830422101d61f855eeaad3cb</sys_update_name>
+        <sys_update_version display_value="sys_ui_section_a85d32bc830422101d61f855eeaad3cb">0db73b1d830822101d61f855eeaad35a</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-03 16:06:49</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
