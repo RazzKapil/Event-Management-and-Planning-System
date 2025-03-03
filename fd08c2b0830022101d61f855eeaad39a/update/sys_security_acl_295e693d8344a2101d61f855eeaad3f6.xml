@@ -1,39 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl">
     <sys_security_acl action="INSERT_OR_UPDATE">
-        <active>false</active>
+        <active>true</active>
         <admin_overrides>true</admin_overrides>
         <advanced>false</advanced>
         <applies_to/>
         <condition/>
         <decision_type>allow</decision_type>
-        <description>Default access control on x_1419495_event_task</description>
+        <description>Allow read for records in sys_history_line, for users with role x_1419495_event.event_admin.</description>
         <local_or_existing>Local</local_or_existing>
-        <name>x_1419495_event_task</name>
-        <operation display_value="delete">delete</operation>
+        <name>sys_history_line</name>
+        <operation display_value="read">read</operation>
         <script/>
         <security_attribute/>
         <sys_class_name>sys_security_acl</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-02-28 18:03:32</sys_created_on>
-        <sys_id>07a63a34830422101d61f855eeaad3ec</sys_id>
+        <sys_created_on>2025-03-03 15:22:38</sys_created_on>
+        <sys_id>295e693d8344a2101d61f855eeaad3f6</sys_id>
         <sys_mod_count>1</sys_mod_count>
-        <sys_name>x_1419495_event_task</sys_name>
+        <sys_name>sys_history_line</sys_name>
         <sys_package display_value="Event Management" source="x_1419495_event">fd08c2b0830022101d61f855eeaad39a</sys_package>
         <sys_policy/>
         <sys_scope display_value="Event Management">fd08c2b0830022101d61f855eeaad39a</sys_scope>
-        <sys_update_name>sys_security_acl_07a63a34830422101d61f855eeaad3ec</sys_update_name>
+        <sys_update_name>sys_security_acl_295e693d8344a2101d61f855eeaad3f6</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-03-03 15:20:33</sys_updated_on>
+        <sys_updated_on>2025-03-03 15:23:56</sys_updated_on>
         <type display_value="record">record</type>
     </sys_security_acl>
     <sys_es_latest_script action="INSERT_OR_UPDATE">
-        <id>07a63a34830422101d61f855eeaad3ec</id>
+        <id>295e693d8344a2101d61f855eeaad3f6</id>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-03-03 15:17:35</sys_created_on>
-        <sys_id>dd7de5f98344a2101d61f855eeaad3ca</sys_id>
+        <sys_created_on>2025-03-03 15:23:13</sys_created_on>
+        <sys_id>7bbe257d8344a2101d61f855eeaad34a</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-03-03 15:17:35</sys_updated_on>
+        <sys_updated_on>2025-03-03 15:23:13</sys_updated_on>
         <table>sys_security_acl</table>
         <use_es_latest>true</use_es_latest>
     </sys_es_latest_script>
