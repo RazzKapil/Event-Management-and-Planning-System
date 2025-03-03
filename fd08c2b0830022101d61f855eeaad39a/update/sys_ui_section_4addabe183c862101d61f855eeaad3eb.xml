@@ -4,15 +4,99 @@
             <element>process_flow.xml</element>
             <position>0</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-03-03 06:00:03</sys_created_on>
-            <sys_id>d6ddebe183c862101d61f855eeaad372</sys_id>
+            <sys_created_on>2025-03-03 16:11:08</sys_created_on>
+            <sys_id>e1b931bd8384a2101d61f855eeaad305</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter display_value="Process Flow">b61b2bad838862101d61f855eeaad376</sys_ui_formatter>
             <sys_ui_section caption="NULL" display_value="" name="x_1419495_event_feedback" sys_domain="global" view="Default view">4addabe183c862101d61f855eeaad3eb</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-03-03 06:00:03</sys_updated_on>
+            <sys_updated_on>2025-03-03 16:11:08</sys_updated_on>
             <sys_user/>
             <type>formatter</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>number</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-03-03 16:11:08</sys_created_on>
+            <sys_id>edb931bd8384a2101d61f855eeaad305</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1419495_event_feedback" sys_domain="global" view="Default view">4addabe183c862101d61f855eeaad3eb</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-03-03 16:11:08</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_event_id</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-03-03 16:11:08</sys_created_on>
+            <sys_id>e5b931bd8384a2101d61f855eeaad306</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1419495_event_feedback" sys_domain="global" view="Default view">4addabe183c862101d61f855eeaad3eb</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-03-03 16:11:08</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_attendee_id</element>
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-03-03 16:11:08</sys_created_on>
+            <sys_id>edb931bd8384a2101d61f855eeaad306</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1419495_event_feedback" sys_domain="global" view="Default view">4addabe183c862101d61f855eeaad3eb</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-03-03 16:11:08</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_rating</element>
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-03-03 16:11:08</sys_created_on>
+            <sys_id>e5b931bd8384a2101d61f855eeaad307</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1419495_event_feedback" sys_domain="global" view="Default view">4addabe183c862101d61f855eeaad3eb</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-03-03 16:11:08</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>status</element>
+            <position>5</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-03-03 16:11:08</sys_created_on>
+            <sys_id>edb931bd8384a2101d61f855eeaad307</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1419495_event_feedback" sys_domain="global" view="Default view">4addabe183c862101d61f855eeaad3eb</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-03-03 16:11:08</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_comments</element>
+            <position>6</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-03-03 16:11:08</sys_created_on>
+            <sys_id>e5b931bd8384a2101d61f855eeaad308</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1419495_event_feedback" sys_domain="global" view="Default view">4addabe183c862101d61f855eeaad3eb</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-03-03 16:11:08</sys_updated_on>
+            <sys_user/>
+            <type/>
         </sys_ui_element>
         <sys_ui_section action="INSERT_OR_UPDATE">
             <caption/>

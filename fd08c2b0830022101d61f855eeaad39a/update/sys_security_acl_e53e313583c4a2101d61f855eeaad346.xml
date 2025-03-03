@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl">
+    <sys_security_acl action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <admin_overrides>true</admin_overrides>
+        <advanced>true</advanced>
+        <applies_to/>
+        <condition/>
+        <decision_type>allow</decision_type>
+        <description>Allow write for records in x_1419495_event_event_record, if the ACL script returns true.</description>
+        <local_or_existing>Local</local_or_existing>
+        <name>x_1419495_event_event_record</name>
+        <operation display_value="write">write</operation>
+        <script><![CDATA[// Allow event managers to edit without restrictions
+if (gs.hasRole('x_1419495_event.event_admin')) {
+    answer = true;
+}
+
+// Check if there is an approved record for this event and user in the Approvals table
+var approvalCheck = new GlideRecord('sysapproval_approver');
+approvalCheck.addQuery('approver', gs.getUserID()); // Check if the current user is the approver
+approvalCheck.addQuery('state', 'approved'); // Ensure approval is granted
+approvalCheck.addQuery('sysapproval', current.sys_id); // Ensure it's for this event record
+approvalCheck.query();
+
+if (approvalCheck.next()) {
+    answer = true; // User has an approved request, allow modification
+}
+
+answer = false; // No approval, deny modification]]></script>
+        <security_attribute/>
+        <sys_class_name>sys_security_acl</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-03 16:33:31</sys_created_on>
+        <sys_id>e53e313583c4a2101d61f855eeaad346</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>x_1419495_event_event_record</sys_name>
+        <sys_package display_value="Event Management" source="x_1419495_event">fd08c2b0830022101d61f855eeaad39a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Event Management">fd08c2b0830022101d61f855eeaad39a</sys_scope>
+        <sys_update_name>sys_security_acl_e53e313583c4a2101d61f855eeaad346</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-03 16:36:38</sys_updated_on>
+        <type display_value="record">record</type>
+    </sys_security_acl>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>e53e313583c4a2101d61f855eeaad346</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-03 16:33:27</sys_created_on>
+        <sys_id>e4de3d3583c4a2101d61f855eeaad3ad</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-03 16:33:27</sys_updated_on>
+        <table>sys_security_acl</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

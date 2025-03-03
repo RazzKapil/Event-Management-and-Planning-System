@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl">
+    <sys_security_acl action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <admin_overrides>true</admin_overrides>
+        <advanced>true</advanced>
+        <applies_to/>
+        <condition/>
+        <decision_type>allow</decision_type>
+        <description/>
+        <local_or_existing>Local</local_or_existing>
+        <name>x_1419495_event_venue.capacity</name>
+        <operation display_value="write">write</operation>
+        <script><![CDATA[// Allow event_admins to modify capacity without restrictions
+if (gs.hasRole('x_1419495_event.event_admin')) {
+    answer = true;
+}
+var requestedCapacity = current.capacity; 
+
+// Get the total attendees for events scheduled at this venue
+var eventCheck = new GlideAggregate('x_event_table'); // Replace with your event table
+eventCheck.addAggregate('SUM', 'expected_attendees'); // Sum up attendees
+eventCheck.addQuery('venue', current.sys_id); // Match the venue
+eventCheck.addQuery('state', 'Scheduled'); // Only consider active/scheduled events
+eventCheck.query();
+
+if (eventCheck.next()) {
+    var totalAttendees = eventCheck.getAggregate('SUM', 'expected_attendees');
+
+    // Allow change only if the requested capacity is greater than or equal to scheduled attendees
+    if (requestedCapacity >= totalAttendees) {
+        answer = true;
+    }
+}
+
+// Deny access if the requested capacity is lower than scheduled attendees
+answer = false;
+]]></script>
+        <security_attribute/>
+        <sys_class_name>sys_security_acl</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-03 17:05:23</sys_created_on>
+        <sys_id>d826067d83c4a2101d61f855eeaad39b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1419495_event_venue.capacity</sys_name>
+        <sys_package display_value="Event Management" source="x_1419495_event">fd08c2b0830022101d61f855eeaad39a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Event Management">fd08c2b0830022101d61f855eeaad39a</sys_scope>
+        <sys_update_name>sys_security_acl_d826067d83c4a2101d61f855eeaad39b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-03 17:05:23</sys_updated_on>
+        <type display_value="record">record</type>
+    </sys_security_acl>
+</record_update>
