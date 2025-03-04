@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance_link">
+    <sp_instance_link action="DELETE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <glyph/>
+        <id/>
+        <kb_article/>
+        <kb_category/>
+        <kb_topic/>
+        <order>1</order>
+        <roles/>
+        <sc_cat_item/>
+        <sc_category/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="1">e4c4c5068384e2101d61f855eeaad39a</sp_column>
+        <sp_page/>
+        <sp_widget display_value="Icon Link">3caa67afcb13020000f8d856634c9c2e</sp_widget>
+        <sys_class_name>sp_instance_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-04 06:52:59</sys_created_on>
+        <sys_id>5f83c9828384e2101d61f855eeaad3db</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Upcoming Events</sys_name>
+        <sys_package display_value="Event Management" source="x_1419495_event">fd08c2b0830022101d61f855eeaad39a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Event Management">fd08c2b0830022101d61f855eeaad39a</sys_scope>
+        <sys_update_name>sp_instance_link_5f83c9828384e2101d61f855eeaad3db</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-04 06:58:22</sys_updated_on>
+        <title>Upcoming Events</title>
+        <type>url</type>
+        <url>https://dev244205.service-now.com/now/nav/ui/classic/params/target/x_1419495_event_event_record_list.do%3Fsysparm_query%3Du_event_date%253Ejavascript%3Ags.endOfToday()%26sysparm_first_row%3D1%26sysparm_view%3D</url>
+        <widget_parameters><![CDATA[{
+	"link_template": {
+		"value": "",
+		"displayValue": ""
+	}
+}]]></widget_parameters>
+    </sp_instance_link>
+    <sys_translated_text action="DELETE" query="documentkey=5f83c9828384e2101d61f855eeaad3db"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Event Management">fd08c2b0830022101d61f855eeaad39a</application>
+        <file_path/>
+        <instance_id>327bf095db4dc69037d72a591396198e</instance_id>
+        <instance_name>dev244205</instance_name>
+        <name>sp_instance_link_5f83c9828384e2101d61f855eeaad3db</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_instance_link"&gt;&lt;sp_instance_link action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;class_name/&gt;&lt;color&gt;default&lt;/color&gt;&lt;css/&gt;&lt;glyph/&gt;&lt;id/&gt;&lt;kb_article/&gt;&lt;kb_category/&gt;&lt;kb_topic/&gt;&lt;order&gt;1&lt;/order&gt;&lt;roles/&gt;&lt;sc_cat_item/&gt;&lt;sc_category/&gt;&lt;short_description/&gt;&lt;size&gt;md&lt;/size&gt;&lt;sp_column display_value="1"&gt;e4c4c5068384e2101d61f855eeaad39a&lt;/sp_column&gt;&lt;sp_page/&gt;&lt;sp_widget display_value="Icon Link"&gt;3caa67afcb13020000f8d856634c9c2e&lt;/sp_widget&gt;&lt;sys_class_name&gt;sp_instance_link&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-03-04 06:52:59&lt;/sys_created_on&gt;&lt;sys_id&gt;5f83c9828384e2101d61f855eeaad3db&lt;/sys_id&gt;&lt;sys_mod_count&gt;3&lt;/sys_mod_count&gt;&lt;sys_name&gt;Upcoming Events&lt;/sys_name&gt;&lt;sys_package display_value="Event Management" source="x_1419495_event"&gt;fd08c2b0830022101d61f855eeaad39a&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Event Management"&gt;fd08c2b0830022101d61f855eeaad39a&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_instance_link_5f83c9828384e2101d61f855eeaad3db&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-03-04 06:58:22&lt;/sys_updated_on&gt;&lt;title&gt;Upcoming Events&lt;/title&gt;&lt;type&gt;url&lt;/type&gt;&lt;url&gt;https://dev244205.service-now.com/now/nav/ui/classic/params/target/x_1419495_event_event_record_list.do%3Fsysparm_query%3Du_event_date%253Ejavascript%3Ags.endOfToday()%26sysparm_first_row%3D1%26sysparm_view%3D&lt;/url&gt;&lt;widget_parameters&gt;&lt;![CDATA[{
+	"link_template": {
+		"value": "",
+		"displayValue": ""
+	}
+}]]&gt;&lt;/widget_parameters&gt;&lt;/sp_instance_link&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=5f83c9828384e2101d61f855eeaad3db"/&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1091155111</payload_hash>
+        <record_name>Upcoming Events</record_name>
+        <reverted_from/>
+        <source>a2f8667083c022101d61f855eeaad3bb</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-04 06:58:22</sys_created_on>
+        <sys_id>d6c409068384e2101d61f855eeaad314</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1955ff2ce730000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-04 06:58:22</sys_updated_on>
+        <type>Instance with Link</type>
+        <update_guid>5ec409067584e210f626b9e7612ef513</update_guid>
+        <update_guid_history>5ec409067584e210f626b9e7612ef513:-1091155111,f1b485064984e210f1815bceffe53c9b:-968233392,ccc3c1c21384e2105ee82c89287ee589:-1732543194,5383cd821584e210ce0faf0a31c3385d:-448376617</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Upcoming Events">01b501468384e2101d61f855eeaad34b</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-04 07:02:23</sys_created_on>
+        <sys_db_object display_value="" name="sp_instance_link">sp_instance_link</sys_db_object>
+        <sys_id>a4631ece9967477eb39457ffcadab701</sys_id>
+        <sys_metadata>5f83c9828384e2101d61f855eeaad3db</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Upcoming Events</sys_name>
+        <sys_package display_value="Event Management" source="x_1419495_event">fd08c2b0830022101d61f855eeaad39a</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Event Management">fd08c2b0830022101d61f855eeaad39a</sys_scope>
+        <sys_scope_delete display_value="">909d60b3437b482594cc4c5e818e53c1</sys_scope_delete>
+        <sys_update_name>sp_instance_link_5f83c9828384e2101d61f855eeaad3db</sys_update_name>
+        <sys_update_version display_value="sp_instance_link_5f83c9828384e2101d61f855eeaad3db">d6c409068384e2101d61f855eeaad314</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-04 07:02:23</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
