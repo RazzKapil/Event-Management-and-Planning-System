@@ -12,31 +12,31 @@
         <kb_article/>
         <kb_category/>
         <kb_topic/>
-        <label>Event</label>
-        <order>100</order>
+        <label>Attendees</label>
+        <order>300</order>
         <record_script/>
         <sc_cat_item/>
         <sc_category/>
         <short_description/>
-        <sp_page/>
-        <sp_rectangle_menu/>
-        <sp_rectangle_menu_item display_value="Home">e500818e8344e2101d61f855eeaad3ce</sp_rectangle_menu_item>
+        <sp_page display_value="attendees_list">8f7bc54e8384e2101d61f855eeaad338</sp_page>
+        <sp_rectangle_menu display_value="EM Header">617cb44a8344e2101d61f855eeaad346</sp_rectangle_menu>
+        <sp_rectangle_menu_item/>
         <sys_class_name>sp_rectangle_menu_item</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-03-04 06:38:25</sys_created_on>
-        <sys_id>8620cd4e8344e2101d61f855eeaad3aa</sys_id>
+        <sys_created_on>2025-03-04 08:08:48</sys_created_on>
+        <sys_id>02e491ca83c4e2101d61f855eeaad317</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Event</sys_name>
+        <sys_name>Attendees</sys_name>
         <sys_package display_value="Event Management" source="x_1419495_event">fd08c2b0830022101d61f855eeaad39a</sys_package>
         <sys_policy/>
         <sys_scope display_value="Event Management">fd08c2b0830022101d61f855eeaad39a</sys_scope>
-        <sys_update_name>sp_rectangle_menu_item_8620cd4e8344e2101d61f855eeaad3aa</sys_update_name>
+        <sys_update_name>sp_rectangle_menu_item_02e491ca83c4e2101d61f855eeaad317</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-03-04 06:38:25</sys_updated_on>
+        <sys_updated_on>2025-03-04 08:08:48</sys_updated_on>
         <table/>
-        <type>url</type>
-        <url>https://dev244205.service-now.com/now/nav/ui/classic/params/target/x_1419495_event_event_record_list.do</url>
+        <type>page</type>
+        <url/>
         <url_target/>
     </sp_rectangle_menu_item>
-    <sys_translated_text action="delete_multiple" query="documentkey=8620cd4e8344e2101d61f855eeaad3aa"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=02e491ca83c4e2101d61f855eeaad317"/>
 </record_update>
