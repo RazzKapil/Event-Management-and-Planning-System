@@ -31,7 +31,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>a9c86a95838022101d61f855eeaad3b8</sys_id>
-        <sys_mod_count>7</sys_mod_count>
+        <sys_mod_count>0</sys_mod_count>
         <sys_name>FetchFeedbackDetails</sys_name>
         <sys_overrides/>
         <sys_package display_value="Event Management" source="x_1419495_event">fd08c2b0830022101d61f855eeaad39a</sys_package>
@@ -39,7 +39,7 @@
         <sys_scope display_value="Event Management">fd08c2b0830022101d61f855eeaad39a</sys_scope>
         <sys_update_name>sys_hub_action_type_definition_a9c86a95838022101d61f855eeaad3b8</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-03-02 06:26:31</sys_updated_on>
+        <sys_updated_on>2025-03-04 18:43:06</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_definition>
@@ -169,18 +169,6 @@ outputs.details = JSON.stringify(feedBackDetails);&#13;
     </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="id=0c2aae19838022101d61f855eeaad3fe"/>
     <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>application</field>
-        <id>0c2aae19838022101d61f855eeaad3fe</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-03-02 06:25:42</sys_created_on>
-        <sys_id>142aee19838022101d61f855eeaad312</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-03-02 06:25:42</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
-        <value/>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>feedback_sys_id</field>
         <id>0c2aae19838022101d61f855eeaad3fe</id>
         <sys_created_by>admin</sys_created_by>
@@ -191,18 +179,6 @@ outputs.details = JSON.stringify(feedBackDetails);&#13;
         <sys_updated_on>2025-03-02 06:25:42</sys_updated_on>
         <table>var__m_sys_hub_step_ext_input_0c2aae19838022101d61f855eeaad3fe</table>
         <value>{{action.feedback_sys_id}}</value>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>script</field>
-        <id>0c2aae19838022101d61f855eeaad3fe</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-03-02 06:25:42</sys_created_on>
-        <sys_id>d42aee19838022101d61f855eeaad312</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-03-02 06:25:42</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
-        <value/>
     </sys_element_mapping>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_0c2aae19838022101d61f855eeaad3fe^id=0c2aae19838022101d61f855eeaad3fe"/>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7^id=0c2aae19838022101d61f855eeaad3fe"/>
@@ -390,11 +366,11 @@ outputs.details = JSON.stringify(feedBackDetails);&#13;
         <sys_created_on>2025-03-02 06:25:42</sys_created_on>
         <sys_id>402aee19838022101d61f855eeaad30b</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>details</sys_name>
         <sys_package display_value="Event Management" source="x_1419495_event">fd08c2b0830022101d61f855eeaad39a</sys_package>
         <sys_policy/>
         <sys_scope display_value="Event Management">fd08c2b0830022101d61f855eeaad39a</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_step_ext_output_0c2aae19838022101d61f855eeaad3fe_details_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2025-03-02 06:25:42</sys_updated_on>
         <url/>
@@ -773,11 +749,11 @@ outputs.details = JSON.stringify(feedBackDetails);&#13;
         <sys_created_on>2025-03-02 06:25:41</sys_created_on>
         <sys_id>cc2aae19838022101d61f855eeaad3ea</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>feedback_sys_id</sys_name>
         <sys_package display_value="Event Management" source="x_1419495_event">fd08c2b0830022101d61f855eeaad39a</sys_package>
         <sys_policy/>
         <sys_scope display_value="Event Management">fd08c2b0830022101d61f855eeaad39a</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_a9c86a95838022101d61f855eeaad3b8_feedback_sys_id_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2025-03-02 06:25:41</sys_updated_on>
         <url/>
@@ -798,11 +774,11 @@ outputs.details = JSON.stringify(feedBackDetails);&#13;
         <sys_created_on>2025-03-02 06:25:42</sys_created_on>
         <sys_id>502aee19838022101d61f855eeaad31a</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Action Status</sys_name>
         <sys_package display_value="Event Management" source="x_1419495_event">fd08c2b0830022101d61f855eeaad39a</sys_package>
         <sys_policy/>
         <sys_scope display_value="Event Management">fd08c2b0830022101d61f855eeaad39a</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_a9c86a95838022101d61f855eeaad3b8___action_status___en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2025-03-02 06:25:42</sys_updated_on>
         <url/>
@@ -821,11 +797,11 @@ outputs.details = JSON.stringify(feedBackDetails);&#13;
         <sys_created_on>2025-03-02 06:25:42</sys_created_on>
         <sys_id>5c2aee19838022101d61f855eeaad31d</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>details</sys_name>
         <sys_package display_value="Event Management" source="x_1419495_event">fd08c2b0830022101d61f855eeaad39a</sys_package>
         <sys_policy/>
         <sys_scope display_value="Event Management">fd08c2b0830022101d61f855eeaad39a</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_a9c86a95838022101d61f855eeaad3b8_details_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2025-03-02 06:25:42</sys_updated_on>
         <url/>
@@ -844,11 +820,11 @@ outputs.details = JSON.stringify(feedBackDetails);&#13;
         <sys_created_on>2025-03-02 06:25:42</sys_created_on>
         <sys_id>dc2aee19838022101d61f855eeaad323</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Don't Treat as Error</sys_name>
         <sys_package display_value="Event Management" source="x_1419495_event">fd08c2b0830022101d61f855eeaad39a</sys_package>
         <sys_policy/>
         <sys_scope display_value="Event Management">fd08c2b0830022101d61f855eeaad39a</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_a9c86a95838022101d61f855eeaad3b8___dont_treat_as_error___en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2025-03-02 06:25:42</sys_updated_on>
         <url/>
@@ -1037,18 +1013,6 @@ outputs.details = JSON.stringify(feedBackDetails);&#13;
     </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="id=4c5ae259838022101d61f855eeaad385"/>
     <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>application</field>
-        <id>4c5ae259838022101d61f855eeaad385</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-03-02 06:26:31</sys_created_on>
-        <sys_id>885ae259838022101d61f855eeaad396</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-03-02 06:26:31</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
-        <value/>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>feedback_sys_id</field>
         <id>4c5ae259838022101d61f855eeaad385</id>
         <sys_created_by>admin</sys_created_by>
@@ -1059,18 +1023,6 @@ outputs.details = JSON.stringify(feedBackDetails);&#13;
         <sys_updated_on>2025-03-02 06:26:31</sys_updated_on>
         <table>var__m_sys_hub_step_ext_input_4c5ae259838022101d61f855eeaad385</table>
         <value>{{action.feedback_sys_id}}</value>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>script</field>
-        <id>4c5ae259838022101d61f855eeaad385</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-03-02 06:26:31</sys_created_on>
-        <sys_id>4c5ae259838022101d61f855eeaad396</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-03-02 06:26:31</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
-        <value/>
     </sys_element_mapping>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_4c5ae259838022101d61f855eeaad385^id=4c5ae259838022101d61f855eeaad385"/>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7^id=4c5ae259838022101d61f855eeaad385"/>
@@ -1258,11 +1210,11 @@ outputs.details = JSON.stringify(feedBackDetails);&#13;
         <sys_created_on>2025-03-02 06:26:31</sys_created_on>
         <sys_id>485ae259838022101d61f855eeaad390</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>details</sys_name>
         <sys_package display_value="Event Management" source="x_1419495_event">fd08c2b0830022101d61f855eeaad39a</sys_package>
         <sys_policy/>
         <sys_scope display_value="Event Management">fd08c2b0830022101d61f855eeaad39a</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_step_ext_output_4c5ae259838022101d61f855eeaad385_details_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2025-03-02 06:26:31</sys_updated_on>
         <url/>
@@ -1641,11 +1593,11 @@ outputs.details = JSON.stringify(feedBackDetails);&#13;
         <sys_created_on>2025-03-02 06:26:31</sys_created_on>
         <sys_id>805ae259838022101d61f855eeaad381</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>feedback_sys_id</sys_name>
         <sys_package display_value="Event Management" source="x_1419495_event">fd08c2b0830022101d61f855eeaad39a</sys_package>
         <sys_policy/>
         <sys_scope display_value="Event Management">fd08c2b0830022101d61f855eeaad39a</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_4c5ae259838022101d61f855eeaad37a_feedback_sys_id_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2025-03-02 06:26:31</sys_updated_on>
         <url/>
@@ -1666,11 +1618,11 @@ outputs.details = JSON.stringify(feedBackDetails);&#13;
         <sys_created_on>2025-03-02 06:26:31</sys_created_on>
         <sys_id>185ae259838022101d61f855eeaad3a1</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>details</sys_name>
         <sys_package display_value="Event Management" source="x_1419495_event">fd08c2b0830022101d61f855eeaad39a</sys_package>
         <sys_policy/>
         <sys_scope display_value="Event Management">fd08c2b0830022101d61f855eeaad39a</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_4c5ae259838022101d61f855eeaad37a_details_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2025-03-02 06:26:31</sys_updated_on>
         <url/>
@@ -1689,11 +1641,11 @@ outputs.details = JSON.stringify(feedBackDetails);&#13;
         <sys_created_on>2025-03-02 06:26:31</sys_created_on>
         <sys_id>505ae259838022101d61f855eeaad3a7</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Don't Treat as Error</sys_name>
         <sys_package display_value="Event Management" source="x_1419495_event">fd08c2b0830022101d61f855eeaad39a</sys_package>
         <sys_policy/>
         <sys_scope display_value="Event Management">fd08c2b0830022101d61f855eeaad39a</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_4c5ae259838022101d61f855eeaad37a___dont_treat_as_error___en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2025-03-02 06:26:31</sys_updated_on>
         <url/>
@@ -1712,11 +1664,11 @@ outputs.details = JSON.stringify(feedBackDetails);&#13;
         <sys_created_on>2025-03-02 06:26:31</sys_created_on>
         <sys_id>d85ae259838022101d61f855eeaad39d</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Action Status</sys_name>
         <sys_package display_value="Event Management" source="x_1419495_event">fd08c2b0830022101d61f855eeaad39a</sys_package>
         <sys_policy/>
         <sys_scope display_value="Event Management">fd08c2b0830022101d61f855eeaad39a</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_4c5ae259838022101d61f855eeaad37a___action_status___en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2025-03-02 06:26:31</sys_updated_on>
         <url/>

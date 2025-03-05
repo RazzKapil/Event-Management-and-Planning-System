@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element audit="true" db_object_id="764e0efc830022101d61f855eeaad3f9" extends="task" label="Event Record" max_length="40" name="x_1419495_event_event_record" type="collection">
-        <element attributes="edge_encryption_enabled=true" label="Contact Person" max_length="40" name="u_contact_person" type="string"/>
         <element attributes="encode_utf8=false" label="Assigned Coordinator" max_length="32" name="assigned_coordinator" reference="x_1419495_event_vendor" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Event Name" max_length="40" name="u_event_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Location" max_length="40" name="u_location" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Contact Person" max_length="40" name="u_contact_person" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Email" max_length="40" name="u_email" type="string"/>
         <element label="Contact Number" max_length="40" name="contact_number" type="string"/>
+        <element label="Finish" max_length="40" name="finish" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" label="Event Date" max_length="40" name="u_event_date" type="glide_date_time"/>
+        <element label="VIP" max_length="40" name="vip" type="boolean"/>
         <element attributes="edge_encryption_enabled=true" choice="1" label="Status" max_length="40" name="u_status" type="string">
             <choice>
+                <element inactive_on_update="false" label="Planned" sequence="1" value="planned"/>
                 <element inactive_on_update="false" label="New" sequence="0" value="new"/>
                 <element inactive_on_update="false" label="Confirmed" sequence="2" value="confirmed"/>
-                <element inactive_on_update="false" label="Planned" sequence="1" value="planned"/>
                 <element inactive_on_update="false" label="Scheduled" sequence="3" value="scheduled"/>
-                <element inactive_on_update="false" label="Cancelled" sequence="5" value="cancelled"/>
                 <element inactive_on_update="false" label="Completed" sequence="4" value="completed"/>
+                <element inactive_on_update="false" label="Cancelled" sequence="5" value="cancelled"/>
             </choice>
         </element>
-        <element attributes="edge_encryption_enabled=true" label="Event Date" max_length="40" name="u_event_date" type="glide_date_time"/>
-        <element attributes="edge_encryption_enabled=true" label="Event Name" max_length="40" name="u_event_name" type="string"/>
-        <element label="VIP" max_length="40" name="vip" type="boolean"/>
-        <element attributes="edge_encryption_enabled=true" label="Location" max_length="40" name="u_location" type="string"/>
-        <element attributes="edge_encryption_enabled=true" label="Email" max_length="40" name="u_email" type="string"/>
-        <element label="Finish" max_length="40" name="finish" type="boolean"/>
     </element>
 </database>

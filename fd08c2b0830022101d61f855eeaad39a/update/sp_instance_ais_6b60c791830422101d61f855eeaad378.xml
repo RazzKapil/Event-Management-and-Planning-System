@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance_ais">
     <sp_instance_ais action="INSERT_OR_UPDATE">
         <active>true</active>
-        <ai_search_source_filter/>
+        <ai_search_source_filter display_value="Service Portal Catalogs">e1f88209772300102d71af6168106172</ai_search_source_filter>
         <class_name/>
         <color>default</color>
         <css/>
@@ -11,8 +11,8 @@
         <order>1</order>
         <placeholder/>
         <roles/>
-        <search_application/>
-        <search_results_configuration/>
+        <search_application display_value="Service Portal Default Search Application">00731b9d5b231010d9a5ce1a8581c7dd</search_application>
+        <search_results_configuration display_value="Service Portal Search">80eb579d53671010968addeeff7b1215</search_results_configuration>
         <short_description/>
         <size>md</size>
         <sp_column display_value="1">b79e7e5d83c022101d61f855eeaad337</sp_column>
@@ -22,17 +22,22 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-03-02 08:03:09</sys_created_on>
         <sys_id>6b60c791830422101d61f855eeaad378</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name/>
         <sys_package display_value="Event Management" source="x_1419495_event">fd08c2b0830022101d61f855eeaad39a</sys_package>
         <sys_policy/>
         <sys_scope display_value="Event Management">fd08c2b0830022101d61f855eeaad39a</sys_scope>
         <sys_update_name>sp_instance_ais_6b60c791830422101d61f855eeaad378</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-03-02 08:03:09</sys_updated_on>
+        <sys_updated_on>2025-03-05 02:07:33</sys_updated_on>
         <title/>
         <url/>
-        <widget_parameters/>
+        <widget_parameters><![CDATA[{
+	"typeahead_search": {
+		"value": "",
+		"displayValue": ""
+	}
+}]]></widget_parameters>
     </sp_instance_ais>
     <sys_translated_text action="delete_multiple" query="documentkey=6b60c791830422101d61f855eeaad378"/>
 </record_update>

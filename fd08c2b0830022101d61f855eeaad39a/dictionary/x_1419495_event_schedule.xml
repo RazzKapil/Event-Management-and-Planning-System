@@ -2,7 +2,7 @@
     <element audit="true" db_object_id="941887bc834422101d61f855eeaad369" extends="task" label="Schedule" max_length="40" name="x_1419495_event_schedule" type="collection">
         <element label="Activity Name" max_length="255" name="activity_name" type="string_full_utf8"/>
         <element label="End time" max_length="40" name="end_time" type="glide_date_time"/>
-        <element label="Start time" max_length="40" name="start_time" type="glide_date_time"/>
         <element label="Event ID" max_length="32" name="event_id" reference="x_1419495_event_event_record" type="reference"/>
+        <element label="Start time" max_length="40" name="start_time" type="glide_date_time"/>
     </element>
 </database>

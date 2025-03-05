@@ -52,7 +52,7 @@
         <order>100</order>
         <push_message_only>false</push_message_only>
         <recipient_fields/>
-        <recipient_groups name="Event Managers">0b4d8ebc830022101d61f855eeaad348</recipient_groups>
+        <recipient_groups>0b4d8ebc830022101d61f855eeaad348</recipient_groups>
         <recipient_users/>
         <reply_to/>
         <send_self>true</send_self>

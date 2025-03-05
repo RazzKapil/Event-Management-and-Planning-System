@@ -74,7 +74,7 @@
         <update_guid_history>24d400d9ae8c6210a5d8167ae6cbe54b:280658564,85f2c059908c621083a42f6a94a67c63:-1386160268,c1b20c19c58c6210a40ab4c3a72cb608:-138689725</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="OAuth for Event Notification">340548d9838c62101d61f855eeaad329</sys_audit_delete>
+        <sys_audit_delete display_value="">340548d9838c62101d61f855eeaad329</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-03-01 18:24:18</sys_created_on>

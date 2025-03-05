@@ -31,7 +31,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>d166eed1838022101d61f855eeaad35d</sys_id>
-        <sys_mod_count>12</sys_mod_count>
+        <sys_mod_count>0</sys_mod_count>
         <sys_name>CalculateRemainingBudget</sys_name>
         <sys_overrides/>
         <sys_package display_value="Event Management" source="x_1419495_event">fd08c2b0830022101d61f855eeaad39a</sys_package>
@@ -39,7 +39,7 @@
         <sys_scope display_value="Event Management">fd08c2b0830022101d61f855eeaad39a</sys_scope>
         <sys_update_name>sys_hub_action_type_definition_d166eed1838022101d61f855eeaad35d</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-03-02 06:19:27</sys_updated_on>
+        <sys_updated_on>2025-03-04 18:43:08</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_definition>
@@ -183,18 +183,6 @@ outputs.budget =  JSON.stringify(remainingBudget);&#13;
     </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="id=cc276255838022101d61f855eeaad361"/>
     <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>application</field>
-        <id>cc276255838022101d61f855eeaad361</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-03-02 06:12:35</sys_created_on>
-        <sys_id>44276255838022101d61f855eeaad373</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-03-02 06:12:35</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
-        <value/>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>event_sys_id</field>
         <id>cc276255838022101d61f855eeaad361</id>
         <sys_created_by>admin</sys_created_by>
@@ -205,18 +193,6 @@ outputs.budget =  JSON.stringify(remainingBudget);&#13;
         <sys_updated_on>2025-03-02 06:19:21</sys_updated_on>
         <table>var__m_sys_hub_step_ext_input_cc276255838022101d61f855eeaad361</table>
         <value>{{action.event_sys_id}}</value>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>script</field>
-        <id>cc276255838022101d61f855eeaad361</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-03-02 06:12:35</sys_created_on>
-        <sys_id>08276255838022101d61f855eeaad373</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-03-02 06:12:35</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
-        <value/>
     </sys_element_mapping>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_cc276255838022101d61f855eeaad361^id=cc276255838022101d61f855eeaad361"/>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7^id=cc276255838022101d61f855eeaad361"/>
@@ -404,11 +380,11 @@ outputs.budget =  JSON.stringify(remainingBudget);&#13;
         <sys_created_on>2025-03-02 06:16:46</sys_created_on>
         <sys_id>e1186695838022101d61f855eeaad3ed</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>RemainingBudget</sys_name>
         <sys_package display_value="Event Management" source="x_1419495_event">fd08c2b0830022101d61f855eeaad39a</sys_package>
         <sys_policy/>
         <sys_scope display_value="Event Management">fd08c2b0830022101d61f855eeaad39a</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_step_ext_output_cc276255838022101d61f855eeaad361_remainingbudget_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2025-03-02 06:16:46</sys_updated_on>
         <url/>
@@ -800,11 +776,11 @@ outputs.budget =  JSON.stringify(remainingBudget);&#13;
         <sys_created_on>2025-03-02 06:12:35</sys_created_on>
         <sys_id>0027a215838022101d61f855eeaad3bb</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>event_sys_id</sys_name>
         <sys_package display_value="Event Management" source="x_1419495_event">fd08c2b0830022101d61f855eeaad39a</sys_package>
         <sys_policy/>
         <sys_scope display_value="Event Management">fd08c2b0830022101d61f855eeaad39a</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_d166eed1838022101d61f855eeaad35d_event_sys_id_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2025-03-02 06:12:35</sys_updated_on>
         <url/>
@@ -825,11 +801,11 @@ outputs.budget =  JSON.stringify(remainingBudget);&#13;
         <sys_created_on>2025-03-02 06:12:35</sys_created_on>
         <sys_id>0c276255838022101d61f855eeaad379</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Action Status</sys_name>
         <sys_package display_value="Event Management" source="x_1419495_event">fd08c2b0830022101d61f855eeaad39a</sys_package>
         <sys_policy/>
         <sys_scope display_value="Event Management">fd08c2b0830022101d61f855eeaad39a</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_d166eed1838022101d61f855eeaad35d___action_status___en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2025-03-02 06:12:35</sys_updated_on>
         <url/>
@@ -848,11 +824,11 @@ outputs.budget =  JSON.stringify(remainingBudget);&#13;
         <sys_created_on>2025-03-02 06:12:35</sys_created_on>
         <sys_id>44276255838022101d61f855eeaad37f</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Don't Treat as Error</sys_name>
         <sys_package display_value="Event Management" source="x_1419495_event">fd08c2b0830022101d61f855eeaad39a</sys_package>
         <sys_policy/>
         <sys_scope display_value="Event Management">fd08c2b0830022101d61f855eeaad39a</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_d166eed1838022101d61f855eeaad35d___dont_treat_as_error___en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2025-03-02 06:12:35</sys_updated_on>
         <url/>
@@ -871,11 +847,11 @@ outputs.budget =  JSON.stringify(remainingBudget);&#13;
         <sys_created_on>2025-03-02 06:18:11</sys_created_on>
         <sys_id>ce682e95838022101d61f855eeaad3a2</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>RemainingBudget</sys_name>
         <sys_package display_value="Event Management" source="x_1419495_event">fd08c2b0830022101d61f855eeaad39a</sys_package>
         <sys_policy/>
         <sys_scope display_value="Event Management">fd08c2b0830022101d61f855eeaad39a</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_d166eed1838022101d61f855eeaad35d_variable_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2025-03-02 06:18:11</sys_updated_on>
         <url/>
@@ -1078,18 +1054,6 @@ outputs.budget =  JSON.stringify(remainingBudget);&#13;
     </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="id=28b8a2d5838022101d61f855eeaad3aa"/>
     <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>application</field>
-        <id>28b8a2d5838022101d61f855eeaad3aa</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-03-02 06:19:27</sys_created_on>
-        <sys_id>2cb8a2d5838022101d61f855eeaad3bb</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-03-02 06:19:27</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
-        <value/>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>event_sys_id</field>
         <id>28b8a2d5838022101d61f855eeaad3aa</id>
         <sys_created_by>admin</sys_created_by>
@@ -1100,18 +1064,6 @@ outputs.budget =  JSON.stringify(remainingBudget);&#13;
         <sys_updated_on>2025-03-02 06:19:27</sys_updated_on>
         <table>var__m_sys_hub_step_ext_input_28b8a2d5838022101d61f855eeaad3aa</table>
         <value>{{action.event_sys_id}}</value>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>script</field>
-        <id>28b8a2d5838022101d61f855eeaad3aa</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-03-02 06:19:27</sys_created_on>
-        <sys_id>ecb8a2d5838022101d61f855eeaad3bb</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-03-02 06:19:27</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
-        <value/>
     </sys_element_mapping>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_28b8a2d5838022101d61f855eeaad3aa^id=28b8a2d5838022101d61f855eeaad3aa"/>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7^id=28b8a2d5838022101d61f855eeaad3aa"/>
@@ -1299,11 +1251,11 @@ outputs.budget =  JSON.stringify(remainingBudget);&#13;
         <sys_created_on>2025-03-02 06:19:27</sys_created_on>
         <sys_id>e8b8a2d5838022101d61f855eeaad3b5</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>RemainingBudget</sys_name>
         <sys_package display_value="Event Management" source="x_1419495_event">fd08c2b0830022101d61f855eeaad39a</sys_package>
         <sys_policy/>
         <sys_scope display_value="Event Management">fd08c2b0830022101d61f855eeaad39a</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_step_ext_output_28b8a2d5838022101d61f855eeaad3aa_remainingbudget_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2025-03-02 06:19:27</sys_updated_on>
         <url/>
@@ -1695,11 +1647,11 @@ outputs.budget =  JSON.stringify(remainingBudget);&#13;
         <sys_created_on>2025-03-02 06:19:27</sys_created_on>
         <sys_id>6cb8a2d5838022101d61f855eeaad3a5</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>event_sys_id</sys_name>
         <sys_package display_value="Event Management" source="x_1419495_event">fd08c2b0830022101d61f855eeaad39a</sys_package>
         <sys_policy/>
         <sys_scope display_value="Event Management">fd08c2b0830022101d61f855eeaad39a</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_28b8a2d5838022101d61f855eeaad39f_event_sys_id_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2025-03-02 06:19:27</sys_updated_on>
         <url/>
@@ -1720,11 +1672,11 @@ outputs.budget =  JSON.stringify(remainingBudget);&#13;
         <sys_created_on>2025-03-02 06:19:27</sys_created_on>
         <sys_id>3cb8a2d5838022101d61f855eeaad3c2</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>RemainingBudget</sys_name>
         <sys_package display_value="Event Management" source="x_1419495_event">fd08c2b0830022101d61f855eeaad39a</sys_package>
         <sys_policy/>
         <sys_scope display_value="Event Management">fd08c2b0830022101d61f855eeaad39a</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_28b8a2d5838022101d61f855eeaad39f_variable_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2025-03-02 06:19:27</sys_updated_on>
         <url/>
@@ -1743,11 +1695,11 @@ outputs.budget =  JSON.stringify(remainingBudget);&#13;
         <sys_created_on>2025-03-02 06:19:27</sys_created_on>
         <sys_id>b8b8a2d5838022101d61f855eeaad3c6</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Action Status</sys_name>
         <sys_package display_value="Event Management" source="x_1419495_event">fd08c2b0830022101d61f855eeaad39a</sys_package>
         <sys_policy/>
         <sys_scope display_value="Event Management">fd08c2b0830022101d61f855eeaad39a</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_28b8a2d5838022101d61f855eeaad39f___action_status___en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2025-03-02 06:19:27</sys_updated_on>
         <url/>
@@ -1766,11 +1718,11 @@ outputs.budget =  JSON.stringify(remainingBudget);&#13;
         <sys_created_on>2025-03-02 06:19:27</sys_created_on>
         <sys_id>f0b8a2d5838022101d61f855eeaad3cc</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Don't Treat as Error</sys_name>
         <sys_package display_value="Event Management" source="x_1419495_event">fd08c2b0830022101d61f855eeaad39a</sys_package>
         <sys_policy/>
         <sys_scope display_value="Event Management">fd08c2b0830022101d61f855eeaad39a</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_28b8a2d5838022101d61f855eeaad39f___dont_treat_as_error___en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2025-03-02 06:19:27</sys_updated_on>
         <url/>

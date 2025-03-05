@@ -31,7 +31,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>832e9a19834022101d61f855eeaad36c</sys_id>
-        <sys_mod_count>19</sys_mod_count>
+        <sys_mod_count>0</sys_mod_count>
         <sys_name>FetchEventDetails</sys_name>
         <sys_overrides/>
         <sys_package display_value="Event Management" source="x_1419495_event">fd08c2b0830022101d61f855eeaad39a</sys_package>
@@ -39,7 +39,7 @@
         <sys_scope display_value="Event Management">fd08c2b0830022101d61f855eeaad39a</sys_scope>
         <sys_update_name>sys_hub_action_type_definition_832e9a19834022101d61f855eeaad36c</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-03-02 06:08:47</sys_updated_on>
+        <sys_updated_on>2025-03-04 18:43:05</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_definition>
@@ -175,18 +175,6 @@
     </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="id=d65fd2d9834022101d61f855eeaad331"/>
     <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>application</field>
-        <id>d65fd2d9834022101d61f855eeaad331</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-03-02 05:38:36</sys_created_on>
-        <sys_id>565fd2d9834022101d61f855eeaad355</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-03-02 05:38:36</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
-        <value/>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>event_sys_id</field>
         <id>d65fd2d9834022101d61f855eeaad331</id>
         <sys_created_by>admin</sys_created_by>
@@ -197,18 +185,6 @@
         <sys_updated_on>2025-03-02 05:49:52</sys_updated_on>
         <table>var__m_sys_hub_step_ext_input_d65fd2d9834022101d61f855eeaad331</table>
         <value>{{action.event_sys_id}}</value>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>script</field>
-        <id>d65fd2d9834022101d61f855eeaad331</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-03-02 05:38:36</sys_created_on>
-        <sys_id>5e5fd2d9834022101d61f855eeaad355</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-03-02 05:38:36</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
-        <value/>
     </sys_element_mapping>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_d65fd2d9834022101d61f855eeaad331^id=d65fd2d9834022101d61f855eeaad331"/>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7^id=d65fd2d9834022101d61f855eeaad331"/>
@@ -396,11 +372,11 @@
         <sys_created_on>2025-03-02 06:08:23</sys_created_on>
         <sys_id>6a262ed1838022101d61f855eeaad31c</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>list</sys_name>
         <sys_package display_value="Event Management" source="x_1419495_event">fd08c2b0830022101d61f855eeaad39a</sys_package>
         <sys_policy/>
         <sys_scope display_value="Event Management">fd08c2b0830022101d61f855eeaad39a</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_step_ext_output_d65fd2d9834022101d61f855eeaad331_name_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2025-03-02 06:08:23</sys_updated_on>
         <url/>
@@ -779,11 +755,11 @@
         <sys_created_on>2025-03-02 05:38:35</sys_created_on>
         <sys_id>065f92d9834022101d61f855eeaad3d8</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>event_sys_id</sys_name>
         <sys_package display_value="Event Management" source="x_1419495_event">fd08c2b0830022101d61f855eeaad39a</sys_package>
         <sys_policy/>
         <sys_scope display_value="Event Management">fd08c2b0830022101d61f855eeaad39a</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_832e9a19834022101d61f855eeaad36c_event_sys_id_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2025-03-02 05:38:35</sys_updated_on>
         <url/>
@@ -804,11 +780,11 @@
         <sys_created_on>2025-03-02 05:38:36</sys_created_on>
         <sys_id>165fd2d9834022101d61f855eeaad364</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Don't Treat as Error</sys_name>
         <sys_package display_value="Event Management" source="x_1419495_event">fd08c2b0830022101d61f855eeaad39a</sys_package>
         <sys_policy/>
         <sys_scope display_value="Event Management">fd08c2b0830022101d61f855eeaad39a</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_832e9a19834022101d61f855eeaad36c___dont_treat_as_error___en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2025-03-02 05:38:36</sys_updated_on>
         <url/>
@@ -827,11 +803,11 @@
         <sys_created_on>2025-03-02 05:38:36</sys_created_on>
         <sys_id>1a5fd2d9834022101d61f855eeaad35d</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Action Status</sys_name>
         <sys_package display_value="Event Management" source="x_1419495_event">fd08c2b0830022101d61f855eeaad39a</sys_package>
         <sys_policy/>
         <sys_scope display_value="Event Management">fd08c2b0830022101d61f855eeaad39a</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_832e9a19834022101d61f855eeaad36c___action_status___en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2025-03-02 05:38:36</sys_updated_on>
         <url/>
@@ -850,11 +826,11 @@
         <sys_created_on>2025-03-02 05:51:35</sys_created_on>
         <sys_id>a052ae9d834022101d61f855eeaad3c3</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>list</sys_name>
         <sys_package display_value="Event Management" source="x_1419495_event">fd08c2b0830022101d61f855eeaad39a</sys_package>
         <sys_policy/>
         <sys_scope display_value="Event Management">fd08c2b0830022101d61f855eeaad39a</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_832e9a19834022101d61f855eeaad36c_list_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2025-03-02 05:51:35</sys_updated_on>
         <url/>
@@ -1049,18 +1025,6 @@
     </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="id=cb13eedd834022101d61f855eeaad34d"/>
     <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>application</field>
-        <id>cb13eedd834022101d61f855eeaad34d</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-03-02 05:55:03</sys_created_on>
-        <sys_id>df13eedd834022101d61f855eeaad36a</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-03-02 05:55:03</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
-        <value/>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>event_sys_id</field>
         <id>cb13eedd834022101d61f855eeaad34d</id>
         <sys_created_by>admin</sys_created_by>
@@ -1071,18 +1035,6 @@
         <sys_updated_on>2025-03-02 05:55:03</sys_updated_on>
         <table>var__m_sys_hub_step_ext_input_cb13eedd834022101d61f855eeaad34d</table>
         <value>{{action.event_sys_id}}</value>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>script</field>
-        <id>cb13eedd834022101d61f855eeaad34d</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-03-02 05:55:03</sys_created_on>
-        <sys_id>9313eedd834022101d61f855eeaad36b</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-03-02 05:55:03</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
-        <value/>
     </sys_element_mapping>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_cb13eedd834022101d61f855eeaad34d^id=cb13eedd834022101d61f855eeaad34d"/>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7^id=cb13eedd834022101d61f855eeaad34d"/>
@@ -1270,11 +1222,11 @@
         <sys_created_on>2025-03-02 06:08:47</sys_created_on>
         <sys_id>e446eed1838022101d61f855eeaad309</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>list</sys_name>
         <sys_package display_value="Event Management" source="x_1419495_event">fd08c2b0830022101d61f855eeaad39a</sys_package>
         <sys_policy/>
         <sys_scope display_value="Event Management">fd08c2b0830022101d61f855eeaad39a</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_step_ext_output_cb13eedd834022101d61f855eeaad34d_name_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2025-03-02 06:08:47</sys_updated_on>
         <url/>
@@ -1653,11 +1605,11 @@
         <sys_created_on>2025-03-02 05:55:02</sys_created_on>
         <sys_id>0313eedd834022101d61f855eeaad349</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>event_sys_id</sys_name>
         <sys_package display_value="Event Management" source="x_1419495_event">fd08c2b0830022101d61f855eeaad39a</sys_package>
         <sys_policy/>
         <sys_scope display_value="Event Management">fd08c2b0830022101d61f855eeaad39a</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_cb13eedd834022101d61f855eeaad342_event_sys_id_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2025-03-02 05:55:02</sys_updated_on>
         <url/>
@@ -1678,11 +1630,11 @@
         <sys_created_on>2025-03-02 05:55:03</sys_created_on>
         <sys_id>1713eedd834022101d61f855eeaad394</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Don't Treat as Error</sys_name>
         <sys_package display_value="Event Management" source="x_1419495_event">fd08c2b0830022101d61f855eeaad39a</sys_package>
         <sys_policy/>
         <sys_scope display_value="Event Management">fd08c2b0830022101d61f855eeaad39a</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_cb13eedd834022101d61f855eeaad342___dont_treat_as_error___en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2025-03-02 05:55:03</sys_updated_on>
         <url/>
@@ -1701,11 +1653,11 @@
         <sys_created_on>2025-03-02 05:55:03</sys_created_on>
         <sys_id>5f13eedd834022101d61f855eeaad38a</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>list</sys_name>
         <sys_package display_value="Event Management" source="x_1419495_event">fd08c2b0830022101d61f855eeaad39a</sys_package>
         <sys_policy/>
         <sys_scope display_value="Event Management">fd08c2b0830022101d61f855eeaad39a</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_cb13eedd834022101d61f855eeaad342_list_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2025-03-02 05:55:03</sys_updated_on>
         <url/>
@@ -1724,11 +1676,11 @@
         <sys_created_on>2025-03-02 05:55:03</sys_created_on>
         <sys_id>db13eedd834022101d61f855eeaad38e</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Action Status</sys_name>
         <sys_package display_value="Event Management" source="x_1419495_event">fd08c2b0830022101d61f855eeaad39a</sys_package>
         <sys_policy/>
         <sys_scope display_value="Event Management">fd08c2b0830022101d61f855eeaad39a</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_cb13eedd834022101d61f855eeaad342___action_status___en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2025-03-02 05:55:03</sys_updated_on>
         <url/>

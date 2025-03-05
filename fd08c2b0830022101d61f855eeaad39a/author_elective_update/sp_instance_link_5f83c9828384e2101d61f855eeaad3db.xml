@@ -72,7 +72,7 @@
         <update_guid_history>5ec409067584e210f626b9e7612ef513:-1091155111,f1b485064984e210f1815bceffe53c9b:-968233392,ccc3c1c21384e2105ee82c89287ee589:-1732543194,5383cd821584e210ce0faf0a31c3385d:-448376617</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="Upcoming Events">01b501468384e2101d61f855eeaad34b</sys_audit_delete>
+        <sys_audit_delete display_value="">01b501468384e2101d61f855eeaad34b</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-03-04 07:02:23</sys_created_on>

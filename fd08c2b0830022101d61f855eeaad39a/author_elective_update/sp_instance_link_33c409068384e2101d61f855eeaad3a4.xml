@@ -72,7 +72,7 @@
         <update_guid_history>f7e4c9061684e210a489b50701a32b74:305434689,f7c409063784e210de8d0cde2d8967a5:-2073663397</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="Pending Tasks">b1b501468384e2101d61f855eeaad362</sys_audit_delete>
+        <sys_audit_delete display_value="">b1b501468384e2101d61f855eeaad362</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-03-04 07:02:26</sys_created_on>

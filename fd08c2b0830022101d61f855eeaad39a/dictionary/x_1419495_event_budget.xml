@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element audit="true" db_object_id="78723abc83c022101d61f855eeaad3de" extends="task" label="Budget" max_length="40" name="x_1419495_event_budget" type="collection">
         <element label="Amount Remaining" max_length="20" name="amount_remaining" type="currency"/>
-        <element attributes="edge_encryption_enabled=true" label="Review Date" max_length="40" name="review_date" type="glide_date"/>
+        <element label="Budget Approved" max_length="40" name="budget_approved" type="boolean"/>
         <element attributes="edge_encryption_enabled=true" choice="1" label="Status" max_length="40" name="status" type="string">
             <choice>
-                <element inactive_on_update="false" label="Not Approved" sequence="2" value="not approved"/>
                 <element inactive_on_update="false" label="New" sequence="0" value="new"/>
                 <element inactive_on_update="false" label="Approved" sequence="1" value="approved"/>
+                <element inactive_on_update="false" label="Not Approved" sequence="2" value="not approved"/>
             </choice>
         </element>
-        <element label="Event ID" max_length="32" name="event_id" reference="x_1419495_event_event_record" type="reference"/>
-        <element label="Amount Spent" max_length="20" name="amount_spent" type="currency"/>
-        <element label="Budget Approved" max_length="40" name="budget_approved" type="boolean"/>
         <element label="Total Budget" max_length="20" name="total_budget" type="currency"/>
+        <element attributes="edge_encryption_enabled=true" label="Review Date" max_length="40" name="review_date" type="glide_date"/>
+        <element label="Amount Spent" max_length="20" name="amount_spent" type="currency"/>
+        <element label="Event ID" max_length="32" name="event_id" reference="x_1419495_event_event_record" type="reference"/>
     </element>
 </database>

@@ -729,7 +729,7 @@ IMG.img-sm {
         <update_guid_history>545b5b5921842210a2515ab85c22b1f6:1975587532</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="Copy of Simple List">8e70e8e1830c22101d61f855eeaad311</sys_audit_delete>
+        <sys_audit_delete display_value="">8e70e8e1830c22101d61f855eeaad311</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-03-02 15:02:44</sys_created_on>

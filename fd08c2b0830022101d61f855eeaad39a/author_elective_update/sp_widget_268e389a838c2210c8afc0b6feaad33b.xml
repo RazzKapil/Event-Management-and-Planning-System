@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="DELETE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller=function() {
+  /* widget controller */
+  var c = this;
+};]]></client_script>
+        <controller_as>c</controller_as>
+        <css/>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id/>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {
+  
+}]]></link>
+        <name>Event Search Widget</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-05 01:09:54</sys_created_on>
+        <sys_id>268e389a838c2210c8afc0b6feaad33b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Event Search Widget</sys_name>
+        <sys_package display_value="Event Management" source="x_1419495_event">fd08c2b0830022101d61f855eeaad39a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Event Management">fd08c2b0830022101d61f855eeaad39a</sys_scope>
+        <sys_update_name>sp_widget_268e389a838c2210c8afc0b6feaad33b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-05 01:09:54</sys_updated_on>
+        <template><![CDATA[<div>
+<!-- your widget template -->
+</div>]]></template>
+    </sp_widget>
+    <sys_es_latest_script action="DELETE">
+        <id>268e389a838c2210c8afc0b6feaad33b</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-05 01:09:53</sys_created_on>
+        <sys_id>df9eb05a838c2210c8afc0b6feaad39f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-05 01:09:53</sys_updated_on>
+        <table>sp_widget</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Event Management">fd08c2b0830022101d61f855eeaad39a</application>
+        <file_path/>
+        <instance_id>5ccb18091bd2b11c32182f8dee4bcb9f</instance_id>
+        <instance_name>dev201039</instance_name>
+        <name>sp_widget_268e389a838c2210c8afc0b6feaad33b</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;category&gt;custom&lt;/category&gt;&lt;client_script&gt;&lt;![CDATA[api.controller=function() {
+  /* widget controller */
+  var c = this;
+};]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css/&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id/&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link&gt;&lt;![CDATA[function link(scope, element, attrs, controller) {
+  
+}]]&gt;&lt;/link&gt;&lt;name&gt;Event Search Widget&lt;/name&gt;&lt;option_schema/&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-03-05 01:09:54&lt;/sys_created_on&gt;&lt;sys_id&gt;268e389a838c2210c8afc0b6feaad33b&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Event Search Widget&lt;/sys_name&gt;&lt;sys_package display_value="Event Management" source="x_1419495_event"&gt;fd08c2b0830022101d61f855eeaad39a&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Event Management"&gt;fd08c2b0830022101d61f855eeaad39a&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_268e389a838c2210c8afc0b6feaad33b&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-03-05 01:09:54&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div&gt;
+&lt;!-- your widget template --&gt;
+&lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;sys_es_latest_script action="INSERT_OR_UPDATE"&gt;&lt;id&gt;268e389a838c2210c8afc0b6feaad33b&lt;/id&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-03-05 01:09:53&lt;/sys_created_on&gt;&lt;sys_id&gt;df9eb05a838c2210c8afc0b6feaad39f&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-03-05 01:09:53&lt;/sys_updated_on&gt;&lt;table&gt;sp_widget&lt;/table&gt;&lt;use_es_latest&gt;true&lt;/use_es_latest&gt;&lt;/sys_es_latest_script&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1224597858</payload_hash>
+        <record_name>Event Search Widget</record_name>
+        <reverted_from/>
+        <source>e346e70283082210c8afc0b6feaad367</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-05 01:09:54</sys_created_on>
+        <sys_id>279eb49a838c2210c8afc0b6feaad3e6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19563da20390000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-05 01:09:54</sys_updated_on>
+        <type>Widget</type>
+        <update_guid>2b9eb49ad58c22104042bfaa2b3b1ae5</update_guid>
+        <update_guid_history>2b9eb49ad58c22104042bfaa2b3b1ae5:1224597858</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Event Search Widget">042501d283cc2210c8afc0b6feaad3ab</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-05 01:38:20</sys_created_on>
+        <sys_db_object display_value="" name="sp_widget">sp_widget</sys_db_object>
+        <sys_id>44da3eb7d5614e42bbf21091bc529604</sys_id>
+        <sys_metadata>268e389a838c2210c8afc0b6feaad33b</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Event Search Widget</sys_name>
+        <sys_package display_value="Event Management" source="x_1419495_event">fd08c2b0830022101d61f855eeaad39a</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Event Management">fd08c2b0830022101d61f855eeaad39a</sys_scope>
+        <sys_scope_delete display_value="">909d60b3437b482594cc4c5e818e53c1</sys_scope_delete>
+        <sys_update_name>sp_widget_268e389a838c2210c8afc0b6feaad33b</sys_update_name>
+        <sys_update_version display_value="sp_widget_268e389a838c2210c8afc0b6feaad33b">279eb49a838c2210c8afc0b6feaad3e6</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-05 01:38:20</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

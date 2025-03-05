@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element audit="true" db_object_id="abd2babc83c022101d61f855eeaad359" extends="task" label="Vendor" max_length="40" name="x_1419495_event_vendor" type="collection">
-        <element attributes="edge_encryption_enabled=true" label="Services Provided" max_length="40" name="services_provided" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Contact Person" max_length="40" name="x_contact_person" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Email" max_length="40" name="email" type="string"/>
         <element attributes="edge_encryption_enabled=true" choice="1" label="Status" max_length="40" name="status" type="string">
             <choice>
-                <element inactive_on_update="false" label="New" sequence="0" value="new"/>
-                <element inactive_on_update="false" label="Not Delivered" sequence="2" value="not delivered"/>
                 <element inactive_on_update="false" label="Delivered" sequence="1" value="delivered"/>
+                <element inactive_on_update="false" label="Not Delivered" sequence="2" value="not delivered"/>
+                <element inactive_on_update="false" label="New" sequence="0" value="new"/>
             </choice>
         </element>
+        <element attributes="edge_encryption_enabled=true" label="Vendor Name" max_length="40" name="x_vendor_name" type="string"/>
         <element attributes="encode_utf8=false" label="Event ID" max_length="32" name="event_id" reference="x_1419495_event_event_record" type="reference"/>
         <element attributes="edge_encryption_enabled=true" label="Services Provided" max_length="40" name="u_service_provided" type="string"/>
         <element label="Contact Number" max_length="40" name="contact_number" type="phone_number_e164"/>
-        <element attributes="edge_encryption_enabled=true" label="Email" max_length="40" name="email" type="string"/>
-        <element attributes="edge_encryption_enabled=true" label="Vendor Name" max_length="40" name="x_vendor_name" type="string"/>
-        <element attributes="edge_encryption_enabled=true" label="Contact Person" max_length="40" name="x_contact_person" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Services Provided" max_length="40" name="services_provided" type="string"/>
     </element>
 </database>

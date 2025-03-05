@@ -41,7 +41,7 @@
         <update_guid_history>673d72bca304221021ec8e754884d1b9:-1381307195</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="x_1419495_event_attendee.x_1419495_event.event_admin">1bd150f5838c62101d61f855eeaad3cd</sys_audit_delete>
+        <sys_audit_delete display_value="">1bd150f5838c62101d61f855eeaad3cd</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-03-03 08:37:24</sys_created_on>

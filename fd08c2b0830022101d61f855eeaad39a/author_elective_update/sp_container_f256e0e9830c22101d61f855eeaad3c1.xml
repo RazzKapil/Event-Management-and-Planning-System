@@ -52,7 +52,7 @@
         <update_guid_history>dbdbec61814c22105e75a97cc22e225b:-1188071229,ba56e0e9920c22103c31836daac500c2:-2030214972</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="Event Management and Planning System - Container 5">09fbac2d830c22101d61f855eeaad384</sys_audit_delete>
+        <sys_audit_delete display_value="">09fbac2d830c22101d61f855eeaad384</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-03-02 15:52:56</sys_created_on>
