@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_column">
+    <sp_column action="DELETE">
+        <class_name/>
+        <order>1</order>
+        <semantic_tag/>
+        <size>4</size>
+        <size_lg/>
+        <size_sm/>
+        <size_xs/>
+        <sp_row display_value="1">d98d315e83c02210f4fca370ceaad3cc</sp_row>
+        <sys_class_name>sp_column</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-05 05:44:43</sys_created_on>
+        <sys_id>518d315e83c02210f4fca370ceaad3cf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>1</sys_name>
+        <sys_package display_value="Event Management" source="x_1419495_event">fd08c2b0830022101d61f855eeaad39a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Event Management">fd08c2b0830022101d61f855eeaad39a</sys_scope>
+        <sys_update_name>sp_column_518d315e83c02210f4fca370ceaad3cf</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-05 05:44:43</sys_updated_on>
+    </sp_column>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Event Management">fd08c2b0830022101d61f855eeaad39a</application>
+        <file_path/>
+        <instance_id>fe762fe6fb431ed489a2f4344eefdcd3</instance_id>
+        <instance_name>dev292710</instance_name>
+        <name>sp_column_518d315e83c02210f4fca370ceaad3cf</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_column"><sp_column action="INSERT_OR_UPDATE"><class_name/><order>1</order><semantic_tag/><size>4</size><size_lg/><size_sm/><size_xs/><sp_row display_value="1">d98d315e83c02210f4fca370ceaad3cc</sp_row><sys_class_name>sp_column</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-03-05 05:44:43</sys_created_on><sys_id>518d315e83c02210f4fca370ceaad3cf</sys_id><sys_mod_count>0</sys_mod_count><sys_name>1</sys_name><sys_package display_value="Event Management" source="x_1419495_event">fd08c2b0830022101d61f855eeaad39a</sys_package><sys_policy/><sys_scope display_value="Event Management">fd08c2b0830022101d61f855eeaad39a</sys_scope><sys_update_name>sp_column_518d315e83c02210f4fca370ceaad3cf</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-03-05 05:44:43</sys_updated_on></sp_column></record_update>]]></payload>
+        <payload_hash>660494240</payload_hash>
+        <record_name>1</record_name>
+        <reverted_from/>
+        <source>d577915a83002210f4fca370ceaad3d6</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-05 05:44:43</sys_created_on>
+        <sys_id>dd8d315e83c02210f4fca370ceaad3d0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19564d5bbef0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-05 05:44:43</sys_updated_on>
+        <type>Column</type>
+        <update_guid>d18d315e29c02210984317ed79580ed0</update_guid>
+        <update_guid_history>d18d315e29c02210984317ed79580ed0:660494240</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="1">d39db15e83c02210f4fca370ceaad3c2</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-05 05:45:08</sys_created_on>
+        <sys_db_object display_value="" name="sp_column">sp_column</sys_db_object>
+        <sys_id>46d80d4897be454ab6896a8cb1dcb644</sys_id>
+        <sys_metadata>518d315e83c02210f4fca370ceaad3cf</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>1</sys_name>
+        <sys_package display_value="Event Management" source="x_1419495_event">fd08c2b0830022101d61f855eeaad39a</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Event Management">fd08c2b0830022101d61f855eeaad39a</sys_scope>
+        <sys_scope_delete display_value="">909d60b3437b482594cc4c5e818e53c1</sys_scope_delete>
+        <sys_update_name>sp_column_518d315e83c02210f4fca370ceaad3cf</sys_update_name>
+        <sys_update_version display_value="sp_column_518d315e83c02210f4fca370ceaad3cf">dd8d315e83c02210f4fca370ceaad3d0</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-05 05:45:08</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
